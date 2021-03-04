@@ -1,0 +1,50 @@
+:root {
+    --mainOrange: #F26C2C;
+    --mainGrey: #636466;
+    --secondaryGrey: #A7A9AC;
+    --greenColor: #71a033;
+}
+
+/* Set the direction right to left */
+
+* {
+    direction: rtl;
+    font-family: 'Cairo', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+}
+
+.space-sm {
+    padding: 0 0.225rem;
+}
+
+.cursor-pointer:hover {
+    cursor: pointer;
+}
+
+.dynamic-text-align:lang(ar) {
+    text-align: right;
+}
+
+.dynamic-text-align:lang(en) {
+    text-align: left;
+}
+
+.dynamic-text-align-reverse:lang(ar) {
+    text-align: left;
+}
+
+.dynamic-text-align-reverse:lang(en) {
+    text-align: right;
+}
+
+.text-main {
+    color: var(--mainOrange);
+}
+
+.text-grey {
+    color: #636466;
+}

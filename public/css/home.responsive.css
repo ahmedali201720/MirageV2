@@ -1,0 +1,142 @@
+@media only screen and (max-width: 576px) {
+    .banner-item img {
+        height: 200px !important;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    .carousel-banner-caption {
+        top: 40%;
+        transform: translateY(-40%);
+    }
+    .carousel-banner-caption .subtitle {
+        font-size: 0.825rem;
+        margin-top: 0;
+        background-color: rgba(255, 255, 255, 0.089);
+        border-radius: 7px;
+        padding: 0.425rem;
+    }
+    .squareContent h2 {
+        font-size: 25px;
+    }
+    .news-video-container iframe {
+        min-height: 210px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .carousel-banner-caption {
+        top: 40%;
+        transform: translateY(-50%);
+    }
+    .carousel-banner-caption .subtitle {
+        font-size: 0.825rem;
+        margin-top: 0;
+        background-color: rgba(255, 255, 255, 0.075);
+        border-radius: 7px;
+        padding: 0.425rem;
+        font-weight: 700;
+    }
+    .squareContent h2 {
+        font-size: 22px;
+    }
+    .news-video-container iframe {
+        min-height: 200px;
+    }
+}
+
+@media only screen and (max-width: 280px) {
+    .banner-item img {
+        height: 200px !important;
+    }
+    .carousel-banner-caption {
+        top: 40%;
+        transform: translateY(-50%);
+    }
+    .carousel-banner-caption .subtitle {
+        font-size: 0.825rem;
+        margin-top: 0;
+        background-color: rgba(255, 255, 255, 0.089);
+        border-radius: 7px;
+        padding: 0.425rem;
+    }
+    .squareContent h2 {
+        font-size: 22px;
+    }
+    .news-video-container iframe {
+        min-height: 190px;
+    }
+}
+
+/* ********************************************************************************************************* */
+
+/* ********************************************************************************************************* */
+
+/* ********************************************************************************************************* */
+
+@media only screen and (min-width: 576px) {
+    .banner-item img {
+        height: 300px !important;
+    }
+    .carousel-banner-caption {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .carousel-banner-caption .subtitle {
+        font-size: 0.825rem;
+        margin-top: 0;
+        background-color: rgba(255, 255, 255, 0.089);
+        border-radius: 7px;
+        padding: 0.425rem;
+        font-size: 1.2rem;
+    }
+    .squareContent h2 {
+        font-size: 25px;
+    }
+    .feedback-item .quote {
+        height: 200px;
+        max-height: 200px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .banner-item img {
+        height: 400px !important;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .banner-item img {
+        height: 450px !important;
+    }
+    .squareContent h2 {
+        font-size: 20px;
+    }
+    .feedback-item .quote {
+        height: 130px;
+        max-height: 130px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .banner-item img {
+        height: 475px !important;
+    }
+    .squareContent h2 {
+        font-size: 25px;
+    }
+    .feedback-item .quote {
+        height: 170px;
+        max-height: 170px;
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+    .squareContent h2 {
+        font-size: 30px;
+    }
+    .feedback-item .quote {
+        height: 130px;
+        max-height: 130px;
+    }
+}

@@ -1,0 +1,666 @@
+/* banner section styles */
+
+.banner-item img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel-banner-caption {
+    position: absolute;
+}
+
+.carousel-banner-caption .title {
+    font-size: 1.5rem !important;
+    font-weight: 700;
+    color: var(--mainOrange);
+    background-color: #ffffffb0;
+    clip-path: polygon(7% 0, 93% 0, 100% 100%, 0 100%);
+    padding: 0.625rem 0.925rem;
+}
+
+.carousel-banner-caption .subtitle {
+    font-size: 1.2rem;
+}
+
+.carousel-control-next-icon {
+    background-image: url('../../assets/images/next.png');
+}
+
+.carousel-control-prev-icon {
+    background-image: url('../../assets/images/prev.png');
+}
+
+/* End banner section styles */
+
+/* News Ticker Styles */
+
+.simple-marquee-container {
+    border: none;
+    background-image: linear-gradient(to right bottom, #f26b2cce, #f26b2cce), url('../../assets/images/background2.jpg');
+    perspective: 1000px;
+    perspective-origin: 50% 50%;
+    animation: animateBackgroundImage 100s linear infinite;
+    z-index: 2000;
+    border-top: 1px solid rgb(230, 218, 218);
+    border-bottom: 1px solid rgb(230, 218, 218);
+    box-shadow: 0 0 10px var(--mainGrey);
+}
+
+.marquee-content-items>li>a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    text-rendering: auto;
+}
+
+/* Statistics section */
+
+#stats {
+    background-image: linear-gradient(to right bottom, #f1e9e8e5, rgba(243, 242, 241, 0.911)), url('../../assets/images/background2.jpg');
+    perspective: 1000px;
+    perspective-origin: 50% 50%;
+    animation: animateBackgroundImage 100s linear infinite;
+    background-attachment: fixed;
+}
+
+.squareItem {
+    margin-top: 30px;
+    position: relative;
+    width: 100%;
+}
+
+.squareItem:hover {
+    cursor: pointer;
+}
+
+.squareInnerContainer {
+    position: relative;
+    padding: 50px 15px 35px;
+    text-align: center;
+    border: 3px solid var(--mainOrange);
+    border-top: none;
+}
+
+.squareInnerContainer:before, .squareInnerContainer:after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    width: 30%;
+    border-bottom: 3px solid var(--mainOrange);
+}
+
+.squareInnerContainer:before {
+    right: 0px;
+}
+
+.squareInnerContainer:after {
+    left: 0px
+}
+
+.squareContent h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-weight: 400;
+    color: #e74c3c;
+}
+
+.squareContent h3 {
+    font-size: 15px;
+    font-weight: 700;
+    margin: 0;
+    color: var(--mainGrey);
+}
+
+.squareIcon {
+    position: absolute;
+    left: 50%;
+    top: -30px;
+    width: 40%;
+    height: 60px;
+    font-size: 45px;
+    margin-left: -20%;
+    color: #444;
+    transition: transform 1.2s;
+}
+
+.squareItem:hover .squareIcon {
+    -webkit-transform: rotate(360deg) scale(1.2);
+    transform: rotate(360deg) scale(1.2);
+    cursor: pointer;
+    color: var(--mainOrange);
+}
+
+.stats-header a:hover {
+    text-decoration: none;
+}
+
+.stats-header img {
+    width: 60px;
+    height: auto;
+    transition: all 1.5s;
+}
+
+.stats-header img:hover {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+
+/* ***************************************************************************************************** */
+
+/* feedback styles */
+
+#feedback {
+    background-image: linear-gradient(to right bottom, #f26b2cad, #f26b2cad), url('../../assets/images/background2.jpg');
+    perspective: 1000px;
+    perspective-origin: 50% 50%;
+    animation: animateBackgroundImage 100s linear infinite;
+    background-attachment: fixed;
+}
+
+.feedback-header {
+    width: fit-content;
+    background-color: rgba(245, 245, 245, 0.733);
+    clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%);
+    border: 2px solid rgb(136, 123, 123);
+}
+
+.feedback-header span {
+    font-weight: 700;
+    color: var(--mainGrey);
+}
+
+.feedback-header a:hover {
+    text-decoration: none;
+}
+
+.feedback-header img {
+    width: 60px;
+    height: auto;
+    transition: all 1.5s;
+}
+
+.feedback-header img:hover {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+
+.feedback-body .fa-quote-left {
+    padding: 0.825rem 1.5rem;
+    font-size: 20px;
+    color: var(--mainOrange);
+}
+
+.feedback-item {
+    background: #fff;
+    border-radius: 10px;
+    margin: .5rem;
+}
+
+.feedback-item:hover {
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.04);
+    transition: .4s;
+    cursor: pointer;
+}
+
+.feedback-item .customer {
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: var(--mainGrey);
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0.625rem 0;
+    border-bottom: 2px solid #333;
+    border-color: rgba(0, 0, 0, 0.5);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 00px 0px 3px #fff;
+}
+
+.feedback-item .customer img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+}
+
+.mark {
+    position: absolute;
+    color: #60a2b8;
+    font-size: 2rem;
+    left: 1rem;
+    padding: 0;
+    line-height: 1.25em;
+}
+
+.feedback-item .quote {
+    text-align: center;
+    margin: 0.625rem;
+    padding: 0 0.825rem;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--mainGrey);
+    overflow: auto;
+}
+
+.feedback-item .feedback-body {
+    background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.815), rgba(255, 255, 255, 0.753)), url('../../assets/images/background2.jpg');
+    perspective: 1000px;
+    perspective-origin: 50% 50%;
+    animation: animateBackgroundImage 100s linear infinite;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0px 0px 3px #fff;
+}
+
+.feedback-item .date-footer {
+    font-size: 14px;
+    font-weight: 700 !important;
+    padding: 1rem 0.825rem;
+    color: #fff;
+    background-image: linear-gradient(to right bottom, rgba(250, 112, 62, 0.774), rgba(245, 106, 56, 0.774)), url('../../assets/images/background2.jpg');
+    perspective: 1000px;
+    perspective-origin: 50% 50%;
+    animation: animateBackgroundImage 100s linear infinite;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    border: 1px solid grey;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--mainOrange);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #b30000;
+}
+
+/* *********************************************************************************************** */
+
+#news-section {
+    position: relative;
+    background-image: linear-gradient(to right bottom, #db794bcc, #db794bcc), url('../../assets/images/background2.jpg');
+    perspective: 1000px;
+    perspective-origin: 50% 50%;
+    animation: animateBackgroundImage 100s linear infinite;
+}
+
+.news-item {
+    position: relative;
+    height: 350px;
+    height: 350px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px #fff;
+    transition: all 0.4s;
+}
+
+.news-item:hover {
+    -webkit-transform: scaleX(1.02) scaleY(1.02);
+    transform: scaleX(1.02) scaleY(1.02);
+}
+
+.news-item::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    border-radius: 8px;
+    background-color: var(--mainOrange);
+    transition: all 0.6s;
+}
+
+.news-item:hover::after {
+    -webkit-transform: scaleX(1.2) scaleY(1.2);
+    transform: scaleX(1.2) scaleY(1.2);
+    opacity: 0;
+}
+
+.news-item .image {
+    position: relative;
+    height: 180px;
+    max-height: 180px;
+    overflow: hidden;
+}
+
+.news-item .image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: auto;
+    border-radius: 8px;
+    transition: all 0.4s;
+}
+
+.news-item .image img:hover {
+    -webkit-transform: scaleX(1.02) scaleY(1.02);
+    transform: scaleX(1.02) scaleY(1.02);
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.news-item .image .overlay {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: #c2bdbbbd;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.news-item .image:hover .overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.news-item .image:hover .overlay a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 40px;
+    transition: all 0.6s;
+}
+
+.news-item .image:hover .overlay a:hover {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    color: rgb(248, 192, 147);
+}
+
+.news-item .body {
+    position: relative;
+    height: 130px;
+    max-height: 130px;
+    background-color: #9f9fa1a9;
+    padding: 0.625rem 0.825rem;
+    overflow: hidden;
+}
+
+.news-item .body .news-text {
+    font-size: 16px;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+}
+
+.news-item .body .news-text:hover {
+    display: block;
+    color: rgb(248, 234, 230);
+    text-decoration: none;
+}
+
+.news-item .footer {
+    position: relative;
+    height: 40px;
+    max-height: 40px;
+    background-color: #9f9fa1a9;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    padding: 0.625rem 0.825rem;
+    background-image: linear-gradient(to right bottom, rgba(70, 68, 68, 0.733), rgba(70, 68, 68, 0.616)), url('../../assets/images/background2.jpg');
+    perspective: 1000px;
+    perspective-origin: 50% 50%;
+    animation: animateBackgroundImage 100s linear infinite;
+    font-size: 13px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.news-item .footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.news-item .footer a:hover {
+    color: rgb(211, 207, 207);
+    text-decoration: none;
+}
+
+.news-item .footer .date {
+    font-size: 11px;
+}
+
+.news-video-container {
+    height: 100%;
+}
+
+.news-video-container iframe {
+    display: block;
+    width: 100%;
+    min-height: 315px;
+    height: 100%;
+    border: 2px solid #fff;
+    border-radius: 10px;
+}
+
+/* ************************************************************************************************************** */
+
+/* Forex Ticker Styles */
+
+#forex-ticker-container .bn-news {
+    background-color: #ffff;
+    z-index: 2000;
+    border-top: 1px solid rgb(230, 218, 218);
+    border-bottom: 1px solid rgb(230, 218, 218);
+    box-shadow: 0 0 10px var(--mainGrey);
+    padding: 0 0.5rem;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.forex-item {
+    margin: 0 0.625rem;
+}
+
+.forex-item .item-header {
+    color: #000;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    padding: 0.325rem 0;
+}
+
+.forex-item .item-info {
+    text-align: center;
+    padding: 0.25rem 0;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+/* ********************************************************************************** */
+
+.investment-categories {
+    box-shadow: 0 0 5px rgb(197, 189, 189);
+    border-radius: 8px;
+    height: 100%;
+}
+
+.investment-categories .header, .company-activity .header {
+    border-radius: 8px;
+    color: rgb(48, 182, 182);
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.company-activity {
+    height: 100%;
+    box-shadow: 0 0 5px rgb(197, 189, 189);
+    border-radius: 8px;
+}
+
+/***************************************************** ************************************************/
+
+.activity-tab-items {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+.activity-tab-items .activity-tab {
+    display: inline-block;
+    margin: 0.625rem 0.325rem;
+    padding: 0.325rem 0.925rem;
+    font-size: 14px;
+    font-weight: 700;
+    border: 2px solid var(--mainOrange);
+    border-radius: 5px;
+    transition: all 0.4s;
+}
+
+.activity-tab-items .activity-tab:hover {
+    cursor: pointer;
+    background-color: var(--mainOrange);
+    color: #fff;
+}
+
+.activity-tab-active {
+    background-color: var(--mainOrange);
+    color: white;
+}
+
+.tab-content {
+    overflow-x: auto;
+}
+
+.table {
+    text-align: center;
+}
+
+.table thead {
+    background-color: var(--mainOrange);
+    color: #fff;
+    ;
+}
+
+.table thead th {
+    vertical-align: middle;
+}
+
+.table .company-name {
+    color: rgb(49, 162, 182);
+}
+
+.table .company-name:hover {
+    color: var(--mainOrange);
+    cursor: pointer;
+}
+
+.table td {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+#qtyTable, #profitTable, #loseTable {
+    display: none;
+}
+
+/* ********************************************************************************************************** */
+
+.highcharts-credits {
+    display: none;
+}
+
+.charts-section * {
+    direction: ltr !important;
+}
+
+.highcharts-title {
+    font-size: 14px !important;
+    font-weight: 700;
+    fill: orangered !important;
+}
+
+/* **************************************************************************************************************** */
+
+.market-state {
+    overflow-x: auto;
+}
+
+.market-state, .egx-data {
+    height: 100%;
+    box-shadow: 0 0 5px rgb(197, 189, 189);
+    border-radius: 8px;
+}
+
+.market-state .header, .egx-data .header {
+    border-radius: 8px;
+    color: rgb(48, 182, 182);
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.market-state-table {
+    direction: rtl !important;
+}
+
+.market-state-table td {
+    font-size: 14px !important;
+    font-weight: 700 !important;
+    vertical-align: middle;
+}
+
+.egx-tab-items {
+    direction: rtl !important;
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+.egx-tab-items .egx-tab {
+    display: inline-block;
+    margin: 0.625rem 0.325rem;
+    padding: 0.325rem 0.925rem;
+    font-size: 14px;
+    font-weight: 700;
+    border: 2px solid var(--mainOrange);
+    border-radius: 5px;
+    transition: all 0.4s;
+}
+
+.egx-tab-items .egx-tab:hover {
+    cursor: pointer;
+    background-color: var(--mainOrange);
+    color: #fff;
+}
+
+.egx-tab-active {
+    background-color: var(--mainOrange);
+    color: white;
+}
+
+#egx30CapChartContainer, #egx30TrChartContainer, #egx50ChartContainer, #egx70ChartContainer, #egx100ChartContainer {
+    display: none;
+}
+
+.egx-data-gist {
+    direction: rtl !important;
+    font-size: 14px;
+}
+
+.egx-data-gist p {
+    text-align: center;
+}
+
+.percentage-value {
+    direction: ltr !important;
+}
+
+/* ********************************************************************************************** */
