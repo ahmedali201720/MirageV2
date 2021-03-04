@@ -124,8 +124,8 @@
 }
 
 .squareItem:hover .squareIcon {
-    -webkit-transform: rotate(360deg) scale(1.2);
-    transform: rotate(360deg) scale(1.2);
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
     cursor: pointer;
     color: var(--mainOrange);
 }
@@ -138,11 +138,6 @@
     width: 60px;
     height: auto;
     transition: all 1.5s;
-}
-
-.stats-header img:hover {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
 }
 
 /* ***************************************************************************************************** */
