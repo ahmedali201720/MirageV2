@@ -174,11 +174,6 @@
     transition: all 1.5s;
 }
 
-.feedback-header img:hover {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-}
-
 .feedback-body .fa-quote-left {
     padding: 0.825rem 1.5rem;
     font-size: 20px;
