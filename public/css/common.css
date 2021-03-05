@@ -48,3 +48,67 @@ body {
 .text-grey {
     color: #636466;
 }
+
+.text-smoke {
+    color: whitesmoke;
+}
+
+/* ************************************************************************************************************** */
+
+/* Forex Ticker Styles */
+
+#forex-ticker-container .bn-news {
+    background-color: #ffff;
+    z-index: 2000;
+    border-top: 1px solid rgb(230, 218, 218);
+    border-bottom: 1px solid rgb(230, 218, 218);
+    box-shadow: 0 0 10px var(--mainGrey);
+    padding: 0 0.5rem;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+#news-ticker-container {
+    border-top: 2px solid rgb(252, 160, 124);
+    border-bottom: 2px solid rgb(252, 160, 124);
+}
+
+.forex-item, .news-ticker-item {
+    padding: 0 1rem;
+}
+
+.forex-item .item-header {
+    color: #000;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    padding: 0.325rem 0;
+}
+
+.forex-item .item-info {
+    text-align: center;
+    padding: 0.25rem 0;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.news-ticker-item .item-header {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    padding: 0.325rem 0;
+}
+
+.news-ticker-item a:hover .item-header {
+    color: rgb(231, 207, 207) !important;
+}
+
+/* ********************************************************************************** */
+
+#news-ticker-container #newsTicker {
+    background-image: linear-gradient(to right bottom, #fc5102ad, #f55b14ad), url('../../assets/images/background2.jpg');
+    perspective: 1000px;
+    perspective-origin: 50% 50%;
+    animation: animateBackgroundImage 100s linear infinite;
+}

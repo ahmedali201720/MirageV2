@@ -34,7 +34,7 @@ $(document).ready(function () {
                 items: 3
             },
             1300: {
-                items: 3.25
+                items: 3.1
             },
             1500: {
                 items: 3.75

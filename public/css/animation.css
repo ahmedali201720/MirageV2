@@ -1,4 +1,4 @@
-/* @keyframes animateBackgroundImage {
+@keyframes animateBackgroundImage {
     100% {
         background-position: 0px -3000px;
     }
@@ -40,4 +40,4 @@
         opacity: 1;
         color: var(--mainOrange);
     }
-} */
+}

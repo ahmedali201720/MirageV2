@@ -84,6 +84,12 @@ $(document).ready(() => {
 
 // ******************************************************************************************************
 
+$('#newsTicker').breakingNews({
+    direction: getPageDirection(),
+    scrollSpeed: 2,
+    borderWidth: 0,
+});
+
 $('#forexTicker').breakingNews({
     direction: getPageDirection(),
     scrollSpeed: 3,
