@@ -1,0 +1,5 @@
+.tickers-container {
+    position: -webkit-sticky;
+    position: sticky;
+    z-index: 20000;
+}

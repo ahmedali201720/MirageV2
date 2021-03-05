@@ -44,42 +44,6 @@ $(document).ready(() => {
         closeSidebar($("#sidebar"));
     });
 
-    // *******************************************************************************************
-
-    $(function () {
-        let options = {
-            autostart: true,
-            property: 'value',
-            onComplete: null,
-            duration: 5000,
-            padding: 10,
-            marquee_class: '.marquee',
-            container_class: '.simple-marquee-container',
-            sibling_class: 0,
-            hover: true,
-            velocity: 0.05,
-            direction: 'right'
-        }
-        $('.simple-marquee-container').SimpleMarquee(options);
-    });
-
-    $(function () {
-        let options = {
-            autostart: true,
-            property: 'value',
-            onComplete: null,
-            duration: 5000,
-            padding: 10,
-            marquee_class: '.forex-marquee',
-            container_class: '.simple-forex-marquee-container',
-            sibling_class: 0,
-            hover: true,
-            velocity: 0.05,
-            direction: 'right'
-        }
-        $('.simple-forex-marquee-container').SimpleMarquee(options);
-    });
-
 });
 
 // ******************************************************************************************************
@@ -106,4 +70,10 @@ $(".activity-tab").click(function () {
 
 $(".egx-tab").click(function () {
     handleEgxTabClick($(this));
+})
+
+// ****************************************************************************************************
+
+$(".tickers-container").css({
+    top: $("#main-header").outerHeight()
 })
