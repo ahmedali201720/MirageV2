@@ -12,6 +12,13 @@ $(document).ready(() => {
 
     // *******************************************************************************************************
 
+    $("#go-up").click(function (e) {
+        e.preventDefault();
+        $("html, body").animate({ scrollTop: 0 }, 1000);
+    })
+
+    // *******************************************************************************************************
+
     setInterval(function () {
         $("#date-time-content .time").text(getTime());
         $("#date-time-content .date").text(getDate());
@@ -75,5 +82,5 @@ $(".egx-tab").click(function () {
 // ****************************************************************************************************
 
 $(".tickers-container").css({
-    top: $("#main-header").outerHeight()
+    top: $("#main-header").outerHeight() + 2
 })

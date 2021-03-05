@@ -45,4 +45,38 @@ $(document).ready(function () {
         },
     });
 
+    $(".company-tab-carousel").owlCarousel({
+        margin: 20,
+        loop: true,
+        mouseDrag: true,
+        touchDrag: true,
+        autoplay: false,
+        autoplayHoverPause: true,
+        nav: false,
+        rtl: true,
+        responsive: {
+            0: {
+                items: 1.2
+            },
+            280: {
+                items: 1
+            },
+            400: {
+                items: 1.2
+            },
+            576: {
+                items: 2.1
+            },
+            768: {
+                items: 2.75
+            },
+            992: {
+                items: 2.1
+            },
+            1200: {
+                items: 6
+            }
+        },
+    });
+
 });

@@ -3,3 +3,22 @@
     position: sticky;
     z-index: 20000;
 }
+
+.company-tab {
+    padding: 0.425rem 0.625rem;
+    text-align: center;
+    color: #000;
+    transition: all 0.1s;
+}
+
+.company-tab:hover {
+    color: var(--mainOrange);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.company-tab-selected, .company-tab-selected:hover {
+    border-bottom: 4px solid var(--mainOrange);
+    color: var(--mainOrange);
+    font-weight: 700;
+}
