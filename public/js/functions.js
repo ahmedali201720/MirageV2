@@ -194,3 +194,32 @@ function handleEgxTabClick(tab) {
     })
 
 }
+
+// *************************************************************************************************
+
+function handleCompanyTabClick(tab) {
+
+    const companyTabs = $(".company-tab");
+    const companyContainers = $(".company-category-container");
+    const containerID = '#' + tab.attr('data-target');
+    const targetContainer = $(containerID);
+
+    companyTabs.each(function () {
+        if (tab.attr('id') == $(this).attr('id')) {
+            if (!$(this).hasClass('company-tab-selected'))
+                $(this).addClass('company-tab-selected');
+        }
+        else {
+            if ($(this).hasClass('company-tab-selected'))
+                $(this).removeClass('company-tab-selected');
+        }
+    })
+
+    companyContainers.each(function () {
+        if (targetContainer.attr('id') == $(this).attr('id'))
+            $(this).fadeIn(300)
+        else
+            $(this).css('display', 'none');
+    })
+
+}

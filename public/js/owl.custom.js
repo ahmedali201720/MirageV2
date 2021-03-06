@@ -46,35 +46,37 @@ $(document).ready(function () {
     });
 
     $(".company-tab-carousel").owlCarousel({
-        margin: 20,
-        loop: true,
+        margin: 0,
+        autoHeight: true,
+        loop: false,
         mouseDrag: true,
         touchDrag: true,
         autoplay: false,
         autoplayHoverPause: true,
-        nav: false,
+        nav: true,
+        navText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>', '<i class="fa fa-angle-right" aria-hidden="true"></i>'],
         rtl: true,
         responsive: {
             0: {
                 items: 1.2
             },
             280: {
-                items: 1
-            },
-            400: {
                 items: 1.2
             },
+            400: {
+                items: 2
+            },
             576: {
-                items: 2.1
+                items: 3
             },
             768: {
                 items: 2.75
             },
             992: {
-                items: 2.1
+                items: 4.2
             },
             1200: {
-                items: 6
+                items: 5
             }
         },
     });

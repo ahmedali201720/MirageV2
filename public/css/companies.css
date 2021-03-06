@@ -5,20 +5,119 @@
 }
 
 .company-tab {
-    padding: 0.425rem 0.625rem;
+    padding: 0.925rem 0.625rem;
     text-align: center;
-    color: #000;
-    transition: all 0.1s;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 .company-tab:hover {
-    color: var(--mainOrange);
-    font-weight: 600;
+    color: rgb(238, 238, 238);
     cursor: pointer;
 }
 
 .company-tab-selected, .company-tab-selected:hover {
-    border-bottom: 4px solid var(--mainOrange);
+    background-color: #fff;
+    color: var(--mainOrange);
+    border-radius: 4px;
+}
+
+.company-category-container {
+    box-shadow: 0 0 5px var(--mainOrange);
+    border-radius: 10px;
+}
+
+.company-item {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+}
+
+.company-item-icon {
+    font-size: 20px;
     color: var(--mainOrange);
     font-weight: 700;
+}
+
+.company-link {
+    font-size: 14px;
+    color: var(--mainGrey);
+    font-weight: 600;
+    text-decoration: none;
+    margin: 0 0.2rem;
+    transition: all 0.2s;
+}
+
+.company-link:hover {
+    color: orangered;
+    text-decoration: none;
+    -webkit-transform: scale(1.02);
+    transform: scale(1.02);
+}
+
+.company-item-empty {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+#resources-container, #chemical-container, #construction-container, #financial-container, #nutrition-container, #healthcare-container, #industrial-container, #gas-container, #personal-container, #realEstate-container, #products-container, #media-container, #tech-container, #communication-container, #tourism-container, #facility-container {
+    display: none;
+}
+
+.company-tab-carousel {
+    background-color: var(--mainOrange);
+    border: 2px solid var(--mainOrange);
+    border-radius: 5px;
+}
+
+/* ********************************************************************** */
+
+.owl-nav {
+    position: absolute;
+    top: 20%;
+    width: 100%;
+}
+
+.owl-next, .owl-prev {
+    position: absolute;
+    outline: none !important;
+}
+
+.owl-next {
+    right: 0;
+}
+
+.owl-prev {
+    left: 0;
+}
+
+.owl-next i, .owl-prev i {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 1.2rem;
+    color: white;
+    background-color: var(--mainGrey);
+    transition: all 0.4s;
+}
+
+.owl-next i {
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+}
+
+.owl-prev i {
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+.owl-next i:hover, .owl-prev i:hover {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
 }
