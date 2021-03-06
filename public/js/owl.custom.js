@@ -48,7 +48,7 @@ $(document).ready(function () {
     $(".company-tab-carousel").owlCarousel({
         margin: 0,
         autoHeight: true,
-        loop: false,
+        loop: true,
         mouseDrag: true,
         touchDrag: true,
         autoplay: false,
