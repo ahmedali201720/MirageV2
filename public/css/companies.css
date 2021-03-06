@@ -4,7 +4,7 @@
     z-index: 20000;
 }
 
-.company-tab {
+.company-tab, .company-details-tab {
     padding: 0.925rem 0.625rem;
     text-align: center;
     color: #fff;
@@ -15,7 +15,7 @@
     overflow: hidden;
 }
 
-.company-tab:hover {
+.company-tab:hover, .company-details-tab:hover {
     color: rgb(238, 238, 238);
     cursor: pointer;
 }
@@ -26,7 +26,7 @@
     border-radius: 4px;
 }
 
-.company-category-container {
+.company-category-container, .company-data-container {
     box-shadow: 0 0 5px var(--mainOrange);
     border-radius: 10px;
 }
@@ -74,6 +74,80 @@
     border-radius: 5px;
 }
 
+.company-section-header {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.company-section-header .header-label {
+    color: var(--mainOrange);
+}
+
+.company-section-header .header-var {
+    color: var(--mainGrey);
+}
+
+.company-data-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.company-data-item .date-time {
+    font-size: 12px;
+    font-weight: 600;
+    color: rgb(60, 148, 231);
+    background-color: var(--mainOrange);
+    border-radius: 10px;
+    padding: 0.225rem 0.625rem;
+    color: #fff;
+    min-width: 80px;
+    overflow: hidden;
+}
+
+.general-org-container {
+    overflow-x: auto;
+}
+
+.company-table {
+    width: 100%;
+    overflow: auto;
+}
+
+.company-table tbody {
+    font-size: 14px;
+}
+
+.company-table .company-table-link {
+    color: var(--mainGrey);
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.company-table .company-table-link:hover {
+    color: orangered;
+    -webkit-transform: scale(1.02);
+    transform: scale(1.02);
+}
+
+.company-table .table-date {
+    color: rgb(55, 142, 177);
+    font-weight: 600;
+}
+
+.company-table .table-time {
+    color: rgb(211, 87, 4);
+    font-weight: 600;
+}
+
+#orgContainer, #dataContainer, #transContainer, #indexContainer, #supportPointContainer, #highLowChartContainer {
+    display: none;
+}
+
+.high-low-chart-container * {
+    direction: ltr !important;
+}
+
 /* ********************************************************************** */
 
 .owl-nav {
@@ -97,11 +171,11 @@
 
 .owl-next i, .owl-prev i {
     width: 20px;
-    height: 20px;
-    line-height: 20px;
+    height: 15px;
+    line-height: 15px;
     vertical-align: middle;
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: white;
     background-color: var(--mainGrey);
     transition: all 0.4s;

@@ -53,6 +53,10 @@ body {
     color: whitesmoke;
 }
 
+.bg-main {
+    background-color: var(--mainOrange);
+}
+
 /* ************************************************************************************************************** */
 
 /* Forex Ticker Styles */
