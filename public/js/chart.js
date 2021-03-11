@@ -46,7 +46,7 @@ $(document).ready(() => {
                 y: individualsPercentage,
                 sliced: false,
                 selected: true,
-                color: '#F26C2C'
+                color: '#034168'
             }, {
                 name: 'مؤسسات ',
                 y: associationPercentage,

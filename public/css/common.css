@@ -3,6 +3,7 @@
     --mainGrey: #636466;
     --secondaryGrey: #A7A9AC;
     --greenColor: #71a033;
+    --blueColor: #034168;
 }
 
 /* Set the direction right to left */
@@ -111,7 +112,7 @@ body {
 /* ********************************************************************************** */
 
 #news-ticker-container #newsTicker {
-    background-image: linear-gradient(to right bottom, #fc5102ad, #f55b14ad), url('../../assets/images/background2.jpg');
+    background-image: linear-gradient(to right bottom, #034168c7, #034168cc), url('../../assets/images/background2.jpg');
     perspective: 1000px;
     perspective-origin: 50% 50%;
     animation: animateBackgroundImage 100s linear infinite;
