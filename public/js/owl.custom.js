@@ -82,4 +82,10 @@ $(document).ready(function () {
         },
     });
 
+    $(".owl-item").click(function (e) {
+        const carousel = $('.owl-carousel').data('owl.carousel');
+        e.preventDefault();
+        carousel.to(carousel.relative($(this).index()));
+    });
+
 });
