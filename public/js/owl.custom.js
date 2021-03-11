@@ -82,15 +82,4 @@ $(document).ready(function () {
         },
     });
 
-    var $owl = $('.owl-carousel').find(".owl-item");
-
-    $owl.each(function (index) {
-        $(this).attr('position', index)
-    });
-
-
-    $(".owl-item").click(function () {
-        $owl.trigger('to.owl.carousel', [$(this).attr('position'), 300]);
-    });
-
 });
