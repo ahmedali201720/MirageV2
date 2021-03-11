@@ -47,13 +47,14 @@ $(document).ready(function () {
 
     $(".company-tab-carousel").owlCarousel({
         margin: 0,
+        center: true,
         autoHeight: true,
         loop: true,
         mouseDrag: true,
         touchDrag: true,
         autoplay: false,
         autoplayHoverPause: true,
-        nav: true,
+        nav: false,
         navText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>', '<i class="fa fa-angle-right" aria-hidden="true"></i>'],
         rtl: true,
         responsive: {
@@ -79,6 +80,17 @@ $(document).ready(function () {
                 items: 5
             }
         },
+    });
+
+    var $owl = $('.owl-carousel').find(".owl-item");
+
+    $owl.each(function (index) {
+        $(this).attr('position', index)
+    });
+
+
+    $(".owl-item").click(function () {
+        $owl.trigger('to.owl.carousel', [$(this).attr('position'), 300]);
     });
 
 });

@@ -22,12 +22,12 @@
 
 .company-tab-selected, .company-tab-selected:hover {
     background-color: #fff;
-    color: var(--mainOrange);
+    color: var(--blueColor);
     border-radius: 4px;
 }
 
 .company-category-container, .company-data-container {
-    box-shadow: 0 0 5px var(--mainOrange);
+    box-shadow: 0 0 5px var(--blueColor);
     border-radius: 10px;
 }
 
@@ -39,7 +39,7 @@
 
 .company-item-icon {
     font-size: 20px;
-    color: var(--mainOrange);
+    color: var(--blueColor);
     font-weight: 700;
 }
 
@@ -53,7 +53,7 @@
 }
 
 .company-link:hover {
-    color: orangered;
+    color: var(--blueColor);
     text-decoration: none;
     -webkit-transform: scale(1.02);
     transform: scale(1.02);
@@ -69,8 +69,8 @@
 }
 
 .company-tab-carousel {
-    background-color: var(--mainOrange);
-    border: 2px solid var(--mainOrange);
+    background-color: var(--blueColor);
+    border: 2px solid #000;
     border-radius: 5px;
 }
 
@@ -80,7 +80,7 @@
 }
 
 .company-section-header .header-label {
-    color: var(--mainOrange);
+    color: var(--blueColor);
 }
 
 .company-section-header .header-var {
@@ -97,7 +97,7 @@
     font-size: 12px;
     font-weight: 600;
     color: rgb(60, 148, 231);
-    background-color: var(--mainOrange);
+    background-color: var(--blueColor);
     border-radius: 10px;
     padding: 0.225rem 0.625rem;
     color: #fff;
@@ -125,7 +125,7 @@
 }
 
 .company-table .company-table-link:hover {
-    color: orangered;
+    color: var(--blueColor);
     -webkit-transform: scale(1.02);
     transform: scale(1.02);
 }
@@ -136,7 +136,7 @@
 }
 
 .company-table .table-time {
-    color: rgb(211, 87, 4);
+    color: var(--blueColor);
     font-weight: 600;
 }
 
@@ -177,7 +177,7 @@
     text-align: center;
     font-size: 1rem;
     color: white;
-    background-color: var(--mainGrey);
+    background-color: var(--mainOrange);
     transition: all 0.4s;
 }
 
