@@ -82,9 +82,8 @@ $(document).ready(function () {
         },
     });
 
-    $(".owl-item").click(function (e) {
-        const carousel = $('.owl-carousel').data('owl.carousel');
-        e.preventDefault();
+    $(".owl-item").click(function () {
+        const carousel = $('.company-tab-carousel').data('owl.carousel');
         carousel.to(carousel.relative($(this).index()));
     });
 
