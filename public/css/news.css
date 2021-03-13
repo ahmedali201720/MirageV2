@@ -75,6 +75,9 @@
 }
 
 .news-data-item .date-time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 12px;
     font-weight: 600;
     color: rgb(60, 148, 231);
@@ -82,11 +85,33 @@
     border-radius: 10px;
     padding: 0.225rem 0.625rem;
     color: #fff;
-    min-width: 80px;
+    min-width: 160px;
     overflow: hidden;
-    width: 160px;
 }
 
 #forexMessages {
     display: none;
+}
+
+.form-search-btn {
+    border: none;
+    outline: none !important;
+    background-color: var(--blueColor);
+    border: 2px solid var(--blueColor);
+    color: #fff;
+    font-weight: 700;
+    border-radius: 5px;
+    min-height: 40px;
+}
+
+.form-search-btn:hover {
+    cursor: pointer;
+    background-color: #0e5a8a;
+    border-color: #0e5a8a;
+}
+
+.row-form input {
+    border: 2px solid var(--blueColor);
+    outline: none !important;
+    border-radius: 5px;
 }
