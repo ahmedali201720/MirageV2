@@ -252,3 +252,32 @@ function handleCompanyDetailsTabClick(tab) {
     })
 
 }
+
+// *************************************************************************************************
+
+function handleNewsTabClick(tab) {
+
+    const companyTabs = $(".news-tab");
+    const companyContainers = $(".news-data-container");
+    const containerID = '#' + tab.attr('data-target');
+    const targetContainer = $(containerID);
+
+    companyTabs.each(function () {
+        if (tab.attr('id') == $(this).attr('id')) {
+            if (!$(this).hasClass('news-tab-selected'))
+                $(this).addClass('news-tab-selected');
+        }
+        else {
+            if ($(this).hasClass('news-tab-selected'))
+                $(this).removeClass('news-tab-selected');
+        }
+    })
+
+    companyContainers.each(function () {
+        if (targetContainer.attr('id') == $(this).attr('id'))
+            $(this).fadeIn(300)
+        else
+            $(this).css('display', 'none');
+    })
+
+}
