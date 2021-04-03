@@ -19,8 +19,8 @@
     <link rel="stylesheet" href="../public/css/common.css">
     <link rel="stylesheet" href="../public/css/layout.css">
     <link rel="stylesheet" href="../public/css/layout.responsive.css">
-    <link rel="stylesheet" href="../public/css/companies.css">
-    <title>Company Details</title>
+    <link rel="stylesheet" href="../public/css/offers.css">
+    <title>ميراج | العروض</title>
 </head>
 
 <body>
@@ -123,7 +123,7 @@
                         </button>
                         <div class="dropdown-options custom-dropdown">
                             <a href="#" class="dropdown-option">تقارير ميراج</a>
-                            <a href="./offers.html" class="dropdown-option">عروض ميراج</a>
+                            <a href="#" class="dropdown-option">عروض ميراج</a>
                             <a href="#" class="dropdown-option">اتصل بنا</a>
                             <a href="#" class="dropdown-option">عن الشركة</a>
                         </div>
@@ -190,7 +190,7 @@
                 </div>
 
                 <div class="col-6 d-flex justify-content-end align-items-center">
-                    <a class="header-button small-header-button experiment-btn" href="../news.html">الأخبار</a>
+                    <a class="header-button small-header-button experiment-btn" href="./news.html">الأخبار</a>
                     <a class="header-button small-header-button new-account-btn" href="#">الأسعار</a>
                 </div>
 
@@ -234,7 +234,7 @@
                     <span class="mx-1">الصفحة الرئيسية</span>
                 </a>
 
-                <a href="../news.html" class="sidebar-link dynamic-text-align">
+                <a href="./news.html" class="sidebar-link dynamic-text-align">
                     <i class="fa fa-newspaper"></i>
                     <span class="mx-1">الأخبار</span>
                 </a>
@@ -627,565 +627,227 @@
 
     </div>
 
-    <section id="companies-section" class="p-xl-5 p-lg-4 p-3">
+    <section id="mirage-news-section" class="p-xl-5 p-lg-4 p-3">
 
         <div class="container-fluid">
 
             <div class="row mb-4">
 
                 <div class="col-12 text-center">
-                    <div class="company-section-header">
-                        <a href="./companies.html" class="header-label">بيان الشركات</a>
-                        <i class="fa fa-angle-left mx-2"></i>
-                        <a href="./company.html" class="header-var">اسم الشركة</a>
+                    <div class="news-section-header">
+                        <h4 class="font-weight-bold">آخر الأخبـــار</h4>
                     </div>
                 </div>
 
             </div>
 
-            <div class="company-category-tabs">
+            <div class="news-tabs">
 
-                <div class="company-tab-carousel owl-carousel">
+                <div class="row news-tabs-wrapper mx-0">
 
-                    <div class="company-details-tab company-tab-selected" id="latestNewsTab"
-                        data-target="ltsNewsContainer">
-                        آخر الأخبار
+                    <div class="col-6 px-0">
+                        <div class="news-tab news-tab-selected" id="dailyNewsTab" data-target="dailyNews">
+                            الأخبـار اليوميـة
+                        </div>
                     </div>
-                    <div class="company-details-tab" id="orgTab" data-target="orgContainer">
-                        الجمعيات العمومية
-                    </div>
-                    <div class="company-details-tab" id="dataTab" data-target="dataContainer">
-                        البيانات الأساسية
-                    </div>
-                    <div class="company-details-tab" id="transTab" data-target="transContainer">
-                        التعاملات الداخلية
-                    </div>
-                    <div class="company-details-tab" id="indexTab" data-target="indexContainer">
-                        حركة السهم
-                    </div>
-                    <div class="company-details-tab" id="supportPointTab" data-target="supportPointContainer">
-                        نقاط الدعم و المقاومة
-                    </div>
-
-                    <div class="company-details-tab" id="chartsTab" data-target="highLowChartContainer">
-                        مخططات السعر
+                    <div class="col-6 px-0">
+                        <div class="news-tab" id="forexMessagesTab" data-target="forexMessages">
+                            رسائـل البورصـة
+                        </div>
                     </div>
 
                 </div>
 
-                <div id="ltsNewsContainer" class="company-data-container px-lg-4 px-3 py-5 mt-4 mb-5">
+                <div id="dailyNews" class="news-data-container px-lg-4 px-3 py-sm-5 py-4 mt-4 mb-5">
 
-                    <div class="row company-items dynamic-text-align">
+                    <form class="form row-form mb-4">
 
-                        <div class="col-lg-6 mb-2 company-data-item">
-                            <div class="company-item">
-                                <i class="fa fa-angle-double-left mx-1 company-item-icon"></i>
-                                <a href="#" class="company-link">
+                        <div class="form-row">
+                            <div class="col-xl-6 col-sm-5 form-group mb-2 dynamic-text-align">
+                                <label for="searchKey">كلمة البحث</label>
+                                <input type="text" class="form-control" id="searchKey" placeholder="ادخل كلمة البحث..">
+                            </div>
+                            <div class="col-xl-4 col-sm-5 form-group mb-2 dynamic-text-align">
+                                <label for="searchKey">تاريخ الخبر</label>
+                                <input type="date" class="form-control" id="dateKey">
+                            </div>
+                            <div class="col-sm-2 mb-2 d-flex align-items-end">
+                                <button type="submit" class="form-search-btn w-100 ">بحـث</button>
+                            </div>
+                        </div>
+                    </form>
+
+                    <div class="row news-items dynamic-text-align">
+
+                        <div class="col-xl-6 mb-2 news-data-item">
+                            <div class="news-item">
+                                <i class="fa fa-angle-double-left mx-1 news-item-icon"></i>
+                                <a href="#" class="news-link">
                                     كريدى أجريكول مصر يستهدف تحويل %100 من خدماته للعمل
                                     الإلكترونى .
-                                    <span class="d-sm-none d-inline-block text-info"> (16/1/2021) </span>
+                                    <span class="d-sm-none d-inline-block text-info"> ( 16/1/2021 - 5:35 PM ) </span>
                                 </a>
                             </div>
                             <div class="date-time d-sm-flex d-none">
+                                <span class="time">
+                                    <span>05:35</span>
+                                    <span class="mx-1">PM</span>
+                                </span>
+                                <span class="mx-1"> - </span>
                                 <span class="date"> 16/1/2021 </span>
                             </div>
                         </div>
 
-                        <div class="col-lg-6 mb-2 company-data-item">
-                            <div class="company-item">
-                                <i class="fa fa-angle-double-left mx-1 company-item-icon"></i>
-                                <a href="#" class="company-link">
-                                    نتائج أعمال بنك كريدى اجريكول – مصر المجمعة السنوية
-                                    <span class="d-sm-none d-inline-block text-info"> ( 16/1/2021 ) </span>
+                        <div class="col-xl-6 mb-2 news-data-item">
+                            <div class="news-item">
+                                <i class="fa fa-angle-double-left mx-1 news-item-icon"></i>
+                                <a href="#" class="news-link">
+                                    كريدى أجريكول مصر يستهدف تحويل %100 من خدماته للعمل
+                                    الإلكترونى .
+                                    <span class="d-sm-none d-inline-block text-info"> ( 16/1/2021 - 5:35 PM ) </span>
                                 </a>
                             </div>
                             <div class="date-time d-sm-flex d-none">
+                                <span class="time">
+                                    <span>05:35</span>
+                                    <span class="mx-1">PM</span>
+                                </span>
+                                <span class="mx-1"> - </span>
                                 <span class="date"> 16/1/2021 </span>
                             </div>
                         </div>
 
-                        <div class="col-lg-6 mb-2 company-data-item">
-                            <div class="company-item">
-                                <i class="fa fa-angle-double-left mx-1 company-item-icon"></i>
-                                <a href="#" class="company-link">
-                                    نتائج أعمال بنك كريدى اجريكول – مصر المجمعة السنوية
-                                    <span class="d-sm-none d-inline-block text-info"> ( 16/1/2021 ) </span>
-                                </a>
-                            </div>
-                            <div class="date-time d-sm-flex d-none">
-                                <span class="date"> 16/2/2020 </span>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-6 mb-2 company-data-item">
-                            <div class="company-item">
-                                <i class="fa fa-angle-double-left mx-1 company-item-icon"></i>
-                                <a href="#" class="company-link">
+                        <div class="col-xl-6 mb-2 news-data-item">
+                            <div class="news-item">
+                                <i class="fa fa-angle-double-left mx-1 news-item-icon"></i>
+                                <a href="#" class="news-link">
                                     كريدى أجريكول مصر يستهدف تحويل %100 من خدماته للعمل
                                     الإلكترونى .
-                                    <span class="d-sm-none d-inline-block text-info"> ( 16/1/2021 ) </span>
+                                    <span class="d-sm-none d-inline-block text-info"> ( 16/1/2021 - 5:35 PM ) </span>
                                 </a>
                             </div>
                             <div class="date-time d-sm-flex d-none">
-                                <span class="date"> 5/3/2021 </span>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-6 mb-2 company-data-item">
-                            <div class="company-item">
-                                <i class="fa fa-angle-double-left mx-1 company-item-icon"></i>
-                                <a href="#" class="company-link">
-                                    كريدى أجريكول مصر يستهدف تحويل %100 من خدماته للعمل
-                                    الإلكترونى .
-                                    <span class="d-sm-none d-inline-block text-info"> ( 16/1/2021 ) </span>
-                                </a>
-                            </div>
-                            <div class="date-time d-sm-flex d-none">
+                                <span class="time">
+                                    <span>05:35</span>
+                                    <span class="mx-1">PM</span>
+                                </span>
+                                <span class="mx-1"> - </span>
                                 <span class="date"> 16/1/2021 </span>
                             </div>
                         </div>
 
-                        <div class="col-lg-6 mb-2 company-data-item">
-                            <div class="company-item">
-                                <i class="fa fa-angle-double-left mx-1 company-item-icon"></i>
-                                <a href="#" class="company-link">
-                                    نتائج أعمال بنك كريدى اجريكول – مصر المجمعة السنوية
-                                    <span class="d-sm-none d-inline-block text-info"> ( 16/1/2021 ) </span>
+                        <div class="col-xl-6 mb-2 news-data-item">
+                            <div class="news-item">
+                                <i class="fa fa-angle-double-left mx-1 news-item-icon"></i>
+                                <a href="#" class="news-link">
+                                    كريدى أجريكول مصر يستهدف تحويل %100 من خدماته للعمل
+                                    الإلكترونى .
+                                    <span class="d-sm-none d-inline-block text-info"> ( 16/1/2021 - 5:35 PM ) </span>
                                 </a>
                             </div>
                             <div class="date-time d-sm-flex d-none">
+                                <span class="time">
+                                    <span>05:35</span>
+                                    <span class="mx-1">PM</span>
+                                </span>
+                                <span class="mx-1"> - </span>
                                 <span class="date"> 16/1/2021 </span>
                             </div>
                         </div>
 
-                        <div class="col-lg-6 mb-2 company-data-item">
-                            <div class="company-item">
-                                <i class="fa fa-angle-double-left mx-1 company-item-icon"></i>
-                                <a href="#" class="company-link">
-                                    نتائج أعمال بنك كريدى اجريكول – مصر المجمعة السنوية
-                                    <span class="d-sm-none d-inline-block text-info"> ( 16/1/2021 ) </span>
-                                </a>
-                            </div>
-                            <div class="date-time d-sm-flex d-none">
-                                <span class="date"> 16/2/2020 </span>
-                            </div>
+                        <div class="col-12 news-item text-center d-none">
+                            لا يوجد أخبار لعرضها
                         </div>
 
-                        <div class="col-lg-6 mb-2 company-data-item">
-                            <div class="company-item">
-                                <i class="fa fa-angle-double-left mx-1 company-item-icon"></i>
-                                <a href="#" class="company-link">
+                    </div>
+
+                </div>
+
+                <div id="forexMessages" class="news-data-container px-lg-4 px-3 py-sm-5 py-4 mt-4 mb-5">
+
+                    <form class="form row-form mb-4">
+
+                        <div class="form-row">
+                            <div class="col-xl-6 col-sm-5 form-group mb-2 dynamic-text-align">
+                                <label for="searchKey">كلمة البحث</label>
+                                <input type="text" class="form-control" id="searchKey" placeholder="ادخل كلمة البحث..">
+                            </div>
+                            <div class="col-xl-4 col-sm-5 form-group mb-2 dynamic-text-align">
+                                <label for="searchKey">تاريخ الخبر</label>
+                                <input type="date" class="form-control" id="dateKey">
+                            </div>
+                            <div class="col-sm-2 mb-2 d-flex align-items-end">
+                                <button type="submit" class="form-search-btn w-100 ">بحـث</button>
+                            </div>
+                        </div>
+                    </form>
+
+                    <div class="row news-items dynamic-text-align">
+
+                        <div class="col-xl-6 mb-2 news-data-item">
+                            <div class="news-item">
+                                <i class="fa fa-angle-double-left mx-1 news-item-icon"></i>
+                                <a href="#" class="news-link">
                                     كريدى أجريكول مصر يستهدف تحويل %100 من خدماته للعمل
                                     الإلكترونى .
-                                    <span class="d-sm-none d-inline-block text-info"> ( 16/1/2021 ) </span>
+                                    <span class="d-sm-none d-inline-block text-info"> ( 16/1/2021 - 5:35 PM ) </span>
                                 </a>
                             </div>
                             <div class="date-time d-sm-flex d-none">
-                                <span class="date"> 5/3/2021 </span>
+                                <span class="time">
+                                    <span>05:35</span>
+                                    <span class="mx-1">PM</span>
+                                </span>
+                                <span class="mx-1"> - </span>
+                                <span class="date"> 16/1/2021 </span>
                             </div>
                         </div>
 
-                        <div class="col-12 company-item text-center d-none">
-                            لا يوجد أخبار عن الشركة لعرضها
+                        <div class="col-xl-6 mb-2 news-data-item">
+                            <div class="news-item">
+                                <i class="fa fa-angle-double-left mx-1 news-item-icon"></i>
+                                <a href="#" class="news-link">
+                                    كريدى أجريكول مصر يستهدف تحويل %100 من خدماته للعمل
+                                    الإلكترونى .
+                                    <span class="d-sm-none d-inline-block text-info"> ( 16/1/2021 - 5:35 PM ) </span>
+                                </a>
+                            </div>
+                            <div class="date-time d-sm-flex d-none">
+                                <span class="time">
+                                    <span>05:35</span>
+                                    <span class="mx-1">PM</span>
+                                </span>
+                                <span class="mx-1"> - </span>
+                                <span class="date"> 16/1/2021 </span>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-6 mb-2 news-data-item">
+                            <div class="news-item">
+                                <i class="fa fa-angle-double-left mx-1 news-item-icon"></i>
+                                <a href="#" class="news-link">
+                                    كريدى أجريكول مصر يستهدف تحويل %100 من خدماته للعمل
+                                    الإلكترونى .
+                                    <span class="d-sm-none d-inline-block text-info"> ( 16/1/2021 - 5:35 PM ) </span>
+                                </a>
+                            </div>
+                            <div class="date-time d-sm-flex d-none">
+                                <span class="time">
+                                    <span>05:35</span>
+                                    <span class="mx-1">PM</span>
+                                </span>
+                                <span class="mx-1"> - </span>
+                                <span class="date"> 16/1/2021 </span>
+                            </div>
+                        </div>
+
+                        <div class="col-12 news-item text-center d-none">
+                            لا يوجد أخبار لعرضها
                         </div>
 
                     </div>
 
                 </div>
-
-                <div id="orgContainer" class="company-data-container px-lg-4 px-3 py-5 mt-4 mb-5">
-
-                    <div class="row company-items dynamic-text-align">
-
-                        <div class="col-12 general-org-container">
-
-                            <table class="table company-table text-center">
-
-                                <thead class="bg-main text-white">
-                                    <tr>
-                                        <th scope="col">الجمعية</th>
-                                        <th scope="col">التاريخ</th>
-                                        <th scope="col">التوقيت</th>
-                                    </tr>
-                                </thead>
-
-                                <tbody>
-
-                                    <tr>
-                                        <td>
-                                            <a href="#" class="company-table-link">
-                                                عمومية عادية وغير عادية "بنك كريدي أجريكول
-                                            </a>
-                                        </td>
-                                        <td class="table-date">26/3/2009</td>
-                                        <td class="table-time">12:00 PM</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>
-                                            <a href="#" class="company-table-link">
-                                                عمومية عادية ( بنك كريدي أجريكول
-                                            </a>
-                                        </td>
-                                        <td class="table-date">28/3/2010</td>
-                                        <td class="table-time">10:00 PM</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>
-                                            <a href="#" class="company-table-link">
-                                                عمومية عادية (بنك كريدي أجريكول - مصر)
-                                            </a>
-                                        </td>
-                                        <td class="table-date">31/3/2011</td>
-                                        <td class="table-time">1:00 PM</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>
-                                            <a href="#" class="company-table-link">
-                                                عمومية عادية وغير عادية "بنك كريدي أجريكول
-                                            </a>
-                                        </td>
-                                        <td class="table-date">26/3/2009</td>
-                                        <td class="table-time">12:00 PM</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>
-                                            <a href="#" class="company-table-link">
-                                                عمومية عادية ( بنك كريدي أجريكول
-                                            </a>
-                                        </td>
-                                        <td class="table-date">28/3/2010</td>
-                                        <td class="table-time">10:00 PM</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>
-                                            <a href="#" class="company-table-link">
-                                                عمومية عادية (بنك كريدي أجريكول - مصر)
-                                            </a>
-                                        </td>
-                                        <td class="table-date">31/3/2011</td>
-                                        <td class="table-time">1:00 PM</td>
-                                    </tr>
-
-                                </tbody>
-
-                            </table>
-
-                        </div>
-
-                        <div class="col-12 company-item text-center d-none">
-                            لا يوجد أخبار عن الشركة لعرضها
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <div id="dataContainer" class="company-data-container px-lg-4 px-3 py-5 mt-4 mb-5">
-
-                    <div class="row company-items dynamic-text-align">
-
-                        <div class="col-12 general-org-container">
-
-                            <table class="table company-table dynamic-text-align">
-
-                                <tbody>
-
-                                    <tr>
-                                        <th class="bg-main text-white text-center">
-                                            العنوان
-                                        </th>
-                                        <td>2،4،6 شارع حسن صبرى - الزمالك</td>
-                                    </tr>
-
-                                    <tr>
-                                        <th class="bg-main text-white text-center">
-                                            التليفون
-                                        </th>
-                                        <td>+202- 27282866</td>
-                                    </tr>
-
-                                    <tr>
-                                        <th class="bg-main text-white text-center">
-                                            الفاكس
-                                        </th>
-                                        <td>+202- 27282866</td>
-                                    </tr>
-
-                                    <tr>
-                                        <th class="bg-main text-white text-center">
-                                            هيكل الملكية
-                                        </th>
-                                        <td>الشركة لمصرية للتمويل العقاري ( 99.99 %)</td>
-                                    </tr>
-
-                                    <tr>
-                                        <th class="bg-main text-white text-center">
-                                            رأس المال
-                                        </th>
-                                        <td>2,073,404,000</td>
-                                    </tr>
-
-                                    <tr>
-                                        <th class="bg-main text-white text-center">
-                                            مجلس الإدارة
-                                        </th>
-                                        <td>
-                                            <p class="text-info font-weight-bold">عن مجموعة كريدي اجريكول فرنسا :</p>
-                                            <ul>
-                                                <li>بيير فيناس – العضو المنتدب – تنفيذي</li>
-                                                <li>ميشيل ماثيو – نائب رئيس مجلس الادارة – غير تنفيذي</li>
-                                                <li>فرانسوا ادوارد</li>
-                                                <li>فيليب انجالبال</li>
-                                                <li>بول كاريت</li>
-                                                <li>جون بول كاريان</li>
-                                                <li>تيري سيمون</li>
-                                            </ul>
-                                            <p class="text-info font-weight-bold">عن الإكتتاب العام :</p>
-                                            <ul>
-                                                <li>عصام محمد فهمي – غير تنفيذي – رئيس مجلس الادارة</li>
-                                                <li>مني مصطفي البرادعي</li>
-                                                <li>علي بن حسن بن دايخ</li>
-                                                <li>عادل رشاد دانش</li>
-                                            </ul>
-                                        </td>
-                                    </tr>
-
-                                </tbody>
-
-                            </table>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <div id="transContainer" class="company-data-container px-lg-4 px-3 py-5 mt-4 mb-5">
-
-                    <div class="row company-items dynamic-text-align">
-
-                        <div class="col-12 general-org-container">
-
-                            <table class="table company-table text-center">
-
-                                <thead class="bg-main text-white">
-                                    <tr>
-                                        <th scope="col">التاريخ</th>
-                                        <th scope="col">المتعامل</th>
-                                        <th scope="col">الصفقة</th>
-                                        <th scope="col">الكمية</th>
-                                    </tr>
-                                </thead>
-
-                                <tbody>
-
-                                    <tr>
-                                        <td class="table-date">26/3/2009</td>
-                                        <td class="text-danger">مجلس الإدارة</td>
-                                        <td>بيع</td>
-                                        <td>280000</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td class="table-date">29/4/2010</td>
-                                        <td class="text-danger">مجلس الإدارة</td>
-                                        <td>شراء</td>
-                                        <td>17812</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td class="table-date">23/01/2017</td>
-                                        <td class="text-danger">مجلس الإدارة</td>
-                                        <td>شراء</td>
-                                        <td>19200</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td class="table-date">26/3/2009</td>
-                                        <td class="text-danger">مجلس الإدارة</td>
-                                        <td>بيع</td>
-                                        <td>280000</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td class="table-date">29/4/2010</td>
-                                        <td class="text-danger">مجلس الإدارة</td>
-                                        <td>شراء</td>
-                                        <td>17812</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td class="table-date">23/01/2017</td>
-                                        <td class="text-danger">مجلس الإدارة</td>
-                                        <td>شراء</td>
-                                        <td>19200</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td class="table-date">26/3/2009</td>
-                                        <td class="text-danger">مجلس الإدارة</td>
-                                        <td>بيع</td>
-                                        <td>280000</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td class="table-date">29/4/2010</td>
-                                        <td class="text-danger">مجلس الإدارة</td>
-                                        <td>شراء</td>
-                                        <td>17812</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td class="table-date">23/01/2017</td>
-                                        <td class="text-danger">مجلس الإدارة</td>
-                                        <td>شراء</td>
-                                        <td>19200</td>
-                                    </tr>
-
-                                </tbody>
-
-                            </table>
-
-                        </div>
-
-                        <div class="col-12 company-item text-center d-none">
-                            لا يوجد أخبار عن الشركة لعرضها
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <div id="indexContainer" class="company-data-container px-lg-4 px-3 py-5 mt-4 mb-5">
-
-                    <div class="row company-items dynamic-text-align">
-
-                        <div class="col-12 general-org-container">
-
-                            <table class="table company-table text-center">
-
-                                <tbody class="font-weight-bold">
-
-                                    <tr>
-                                        <th class="bg-main text-white text-center">
-                                            الفتح
-                                        </th>
-                                        <td class="text-grey">25.540</td>
-                                    </tr>
-
-                                    <tr>
-                                        <th class="bg-main text-white text-center">
-                                            آخر سعر
-                                        </th>
-                                        <td class="text-grey">25.500</td>
-                                    </tr>
-
-                                    <tr>
-                                        <th class="bg-main text-white text-center">
-                                            التغير
-                                        </th>
-                                        <td class="text-info">-0.16</td>
-                                    </tr>
-
-                                    <tr>
-                                        <th class="bg-main text-white text-center">
-                                            أعلى سعر
-                                        </th>
-                                        <td class="text-info">25.860</td>
-                                    </tr>
-
-                                    <tr>
-                                        <th class="bg-main text-white text-center">
-                                            أقل سعر
-                                        </th>
-                                        <td class="text-info">25.500</td>
-                                    </tr>
-
-                                    <tr>
-                                        <th class="bg-main text-white text-center">
-                                            الكمية
-                                        </th>
-                                        <td class="text-grey">724160</td>
-                                    </tr>
-
-                                    <tr>
-                                        <th class="bg-main text-white text-center">
-                                            القيمة
-                                        </th>
-                                        <td class="text-main">18470444.300</td>
-                                    </tr>
-
-                                </tbody>
-
-                            </table>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <div id="supportPointContainer" class="company-data-container px-lg-4 px-3 py-5 mt-4 mb-5">
-
-                    <div class="row company-items dynamic-text-align">
-
-                        <div class="col-12 general-org-container">
-
-                            <table class="table company-table text-center">
-
-                                <tbody class="font-weight-bold">
-
-                                    <tr>
-                                        <th class="bg-main text-white text-center">
-                                            مستوى المقاومة الثانى (R2)
-                                        </th>
-                                        <td class="text-success">25.98</td>
-                                    </tr>
-
-                                    <tr>
-                                        <th class="bg-main text-white text-center">
-                                            مستوى المقاومة الأول (R1)
-                                        </th>
-                                        <td class="text-success">25.75</td>
-                                    </tr>
-
-                                    <tr>
-                                        <th class="bg-main text-white text-center">
-                                            نقطة إرتكاز
-                                        </th>
-                                        <td class="text-info">25.62</td>
-                                    </tr>
-
-                                    <tr>
-                                        <th class="bg-main text-white text-center">
-                                            مستوى الدعم الأول (S1)
-                                        </th>
-                                        <td class="text-danger">25.39</td>
-                                    </tr>
-
-                                    <tr>
-                                        <th class="bg-main text-white text-center">
-                                            مستوى الدعم الثانى (S2)
-                                        </th>
-                                        <td class="text-danger">25.26</td>
-                                    </tr>
-
-                                </tbody>
-
-                            </table>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <div class="high-low-chart-container company-data-container mt-3 py-3" id="highLowChartContainer"></div>
 
             </div>
 
@@ -1346,13 +1008,9 @@
     <script src="../assets/fontawesome/js/font-kit.js"></script>
     <script src="../public/js/breaking-news.min.js"></script>
     <script src="../public/js/owl.carousel.min.js"></script>
-    <script src="../public/js/owl.custom.js"></script>
-    <script src="../public/js/highstock.js"></script>
-    <script src="../public/js/data.js"></script>
     <script src="../public/js/functions.js"></script>
     <script src="../public/js/layout.js"></script>
-    <script src="../public/js/companies.js"></script>
-    <script src="../public/js/company.js"></script>
+    <script src="../public/js/news.js"></script>
 </body>
 
 </html>
