@@ -83,4 +83,14 @@ $(".egx-tab").click(function () {
 
 $(".tickers-container").css({
     top: $("#main-header").outerHeight() + 2
-})
+});
+
+$(".copy-btn").click(function () {
+
+    const correspondingAlert = $(".success-alert", this);
+    correspondingAlert.fadeIn(200);
+    setTimeout(function () {
+        correspondingAlert.fadeOut(200);
+    }, 1000);
+
+});
