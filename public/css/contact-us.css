@@ -1,0 +1,31 @@
+.social-contacts-section a {
+    font-size: 32px;
+    color: var(--blueColor);
+    text-decoration: none;
+}
+
+.social-contacts-section a:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.nav-pills {
+    background-color: var(--blueColor);
+}
+
+.nav-pills .nav-link {
+    font-weight: 600;
+    color: #ffffff;
+    border-radius: 0;
+    border-bottom: 1px solid #ffffff;
+    padding: 11px 14px;
+    transition: all 0.4s;
+}
+
+.nav-pills .nav-link:hover {
+    background-color: #f26b2cd2;
+}
+
+.nav-pills .nav-link[aria-selected=true] {
+    background-color: var(--mainOrange);
+}
