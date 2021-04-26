@@ -74,6 +74,16 @@
     border-radius: 5px;
 }
 
+.agenda-tab-carousel {
+    background-color: var(--blueColor);
+    border: 2px solid #000;
+    border-radius: 5px;
+}
+
+#free-index-container , #general-org-container{
+    display: none;
+}
+
 .company-section-header {
     font-size: 16px;
     font-weight: 700;

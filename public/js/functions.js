@@ -282,6 +282,35 @@ function handleNewsTabClick(tab) {
 
 }
 
+// *************************************************************************************************
+
+function handleAgendaTabClick(tab) {
+
+    const agendaTabs = $(".agenda-tab");
+    const agendaContainers = $(".agenda-container");
+    const containerID = '#' + tab.attr('data-target');
+    const targetContainer = $(containerID);
+
+    agendaTabs.each(function () {
+        if (tab.attr('id') == $(this).attr('id')) {
+            if (!$(this).hasClass('agenda-tab-selected'))
+                $(this).addClass('agenda-tab-selected');
+        }
+        else {
+            if ($(this).hasClass('agenda-tab-selected'))
+                $(this).removeClass('agenda-tab-selected');
+        }
+    })
+
+    agendaContainers.each(function () {
+        if (targetContainer.attr('id') == $(this).attr('id'))
+            $(this).fadeIn(300)
+        else
+            $(this).css('display', 'none');
+    })
+
+}
+
 // **************************************************************************************
 
 function copyToClipboard(element) {

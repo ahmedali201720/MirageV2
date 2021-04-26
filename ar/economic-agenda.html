@@ -19,8 +19,8 @@
     <link rel="stylesheet" href="../public/css/common.css">
     <link rel="stylesheet" href="../public/css/layout.css">
     <link rel="stylesheet" href="../public/css/layout.responsive.css">
-    <link rel="stylesheet" href="../public/css/offers.css">
-    <title>ميراج | العروض</title>
+    <link rel="stylesheet" href="../public/css/agenda.css">
+    <title>الأجندة الإقتصادية</title>
 </head>
 
 <body>
@@ -112,7 +112,7 @@
                     <a href="./index.html" class="top-header-link text-center">الرئيسية</a>
                     <a href="#" class="top-header-link text-center">فتح حساب</a>
                     <a href="./news.html" class="top-header-link text-center">الأخبار</a>
-                    <a href="./economic-agenda.html" class="top-header-link text-center">الأجندة الإقتصادية</a>
+                    <a href="#" class="top-header-link text-center">الأجندة الإقتصادية</a>
                     <a href="./companies.html" class="top-header-link text-center">بيان الشركات</a>
                     <a href="#" class="top-header-link d-lg-flex d-md-none">تقارير ميراج</a>
                     <a href="./offers.html" class="top-header-link d-lg-flex d-md-none">عروض ميراج</a>
@@ -123,7 +123,7 @@
                         </button>
                         <div class="dropdown-options custom-dropdown">
                             <a href="#" class="dropdown-option">تقارير ميراج</a>
-                            <a href="#" class="dropdown-option">عروض ميراج</a>
+                            <a href="./offers.html" class="dropdown-option">عروض ميراج</a>
                             <a href="./contact-us.html" class="dropdown-option">اتصل بنا</a>
                             <a href="#" class="dropdown-option">عن الشركة</a>
                         </div>
@@ -239,7 +239,7 @@
                     <span class="mx-1">الأخبار</span>
                 </a>
 
-                <a href="./economic-agenda.html" class="sidebar-link dynamic-text-align">
+                <a href="#" class="sidebar-link dynamic-text-align">
                     <i class="fa fa-newspaper"></i>
                     <span class="mx-1">الأجندة الإقتصادية</span>
                 </a>
@@ -627,105 +627,380 @@
 
     </div>
 
-    <section id="mrirage-offers-section" class="p-xl-5 py-5">
+    <section id="agenda-section" class="economic-agenda-section p-xl-5 p-lg-4 p-3">
 
         <div class="container-fluid">
 
-            <div class="row mb-5">
+            <div class="company-category-tabs">
 
-                <div class="col-12 text-center">
-                    <div class="offers-section-header px-5 py-3">
-                        <h4 class="font-weight-bold">العروض و المقالات</h4>
+                <div class="agenda-tab-carousel owl-carousel">
+
+                    <div class="agenda-tab agenda-tab-selected" id="banks-tab" data-target="coupons-container">
+                        الكوبونات
                     </div>
-                </div>
-
-            </div>
-
-            <div class="row d-flex justify-content-md-start justify-content-center">
-
-                <div class="col-md-6 col-sm-10 mb-3">
-
-                    <div class="offer-card">
-
-                        <div
-                            class="header p-3 d-flex flex-sm-row flex-column justify-content-sm-between justify-content-center align-items-center">
-                            <p class="title mb-0">
-                                <a href="../assets/images/offers1.jpg">عرض السوبر جامبو</a>
-                            </p>
-                            <p class="time mb-0">11/11/2020</p>
-                        </div>
-
-                        <div class="body">
-                            <a href="../assets/images/offers1.jpg">
-                                <img src="../assets/images/offers1.jpg" alt="offer">
-                            </a>
-                        </div>
-
+                    <div class="agenda-tab" id="resources-tab" data-target="general-org-container">
+                        مواعيد الجمعيات العمومية
+                    </div>
+                    <div class="agenda-tab" id="chemical-tab" data-target="free-index-container">
+                        الأسهم المجانية
                     </div>
 
                 </div>
 
-                <div class="col-md-6 col-sm-10 mb-3">
+                <div id="coupons-container" class="agenda-container px-3 py-4 mt-4 mb-5">
 
-                    <div class="offer-card">
+                    <div class="agenda-table dynamic-text-align">
 
-                        <div
-                            class="header p-3 d-flex flex-sm-row flex-column justify-content-sm-between justify-content-center align-items-center">
-                            <p class="title mb-0">
-                                <a href="../assets/images/offers3.jpg">كل مميزات الشركات بشركة واحده فقط</a>
-                            </p>
-                            <p class="time mb-0">07/03/2020</p>
-                        </div>
+                        <table class="table agenda-table text-center">
 
-                        <div class="body">
-                            <a href="../assets/images/offers3.jpg">
-                                <img src="../assets/images/offers3.jpg" alt="offer">
-                            </a>
-                        </div>
+                            <thead class="bg-main text-white">
+                                <tr>
+                                    <th>اسم الشركة</th>
+                                    <th>رقم الكوبون</th>
+                                    <th>قيمة الكوبون</th>
+                                    <th>تاريخ الاستحقاق</th>
+                                    <th>تاريخ الدفع</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+
+                                <tr>
+                                    <td>
+                                        مصر الجديدة للاسكان و التعمير
+                                    </td>
+                                    <td class="value">26</td>
+                                    <td class="text">0.05 جنيه مصرى (القسط الأول)</td>
+                                    <td class="table-date text-danger">28/03/2021</td>
+                                    <td class="table-date">31/03/2021</td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        مصر الجديدة للاسكان و التعمير
+                                    </td>
+                                    <td class="value">26</td>
+                                    <td class="text">0.05 جنيه مصرى (القسط الأول)</td>
+                                    <td class="table-date text-danger">28/03/2021</td>
+                                    <td class="table-date">31/03/2021</td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        النيل للادوية والصناعات الكيماوية - النيل
+                                    </td>
+                                    <td class="value">26</td>
+                                    <td class="text">0.05 جنيه مصرى (القسط الأول)</td>
+                                    <td class="table-date text-danger">28/03/2021</td>
+                                    <td class="table-date">31/03/2021</td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        مصر لصناعة الكيماويات
+                                    </td>
+                                    <td class="value">26</td>
+                                    <td class="text">0.05 جنيه مصرى (القسط الأول)</td>
+                                    <td class="table-date text-danger">28/03/2021</td>
+                                    <td class="table-date">31/03/2021</td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        مطاحن ومخابز الاسكندرية
+                                    </td>
+                                    <td class="value">26</td>
+                                    <td class="text">0.05 جنيه مصرى (القسط الأول)</td>
+                                    <td class="table-date text-danger">28/03/2021</td>
+                                    <td class="table-date">31/03/2021</td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        الدولية للتأجير التمويلي (إنكوليس)
+                                    </td>
+                                    <td class="value">26</td>
+                                    <td class="text">0.05 جنيه مصرى (القسط الأول)</td>
+                                    <td class="table-date text-danger">28/03/2021</td>
+                                    <td class="table-date">31/03/2021</td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        العامة للصوامع والتخزين
+                                    </td>
+                                    <td class="value">26</td>
+                                    <td class="text">0.05 جنيه مصرى (القسط الأول)</td>
+                                    <td class="table-date text-danger">28/03/2021</td>
+                                    <td class="table-date">31/03/2021</td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        اوراسكوم كونستراكشون بي ال سي
+                                    </td>
+                                    <td class="value">26</td>
+                                    <td class="text">0.05 جنيه مصرى (القسط الأول)</td>
+                                    <td class="table-date text-danger">28/03/2021</td>
+                                    <td class="table-date">31/03/2021</td>
+                                </tr>
+
+                            </tbody>
+
+                        </table>
 
                     </div>
 
                 </div>
 
-                <div class="col-md-6 col-sm-10 mb-3">
+                <div id="general-org-container" class="agenda-container px-3 py-4 mt-4 mb-5">
 
-                    <div class="offer-card">
+                    <div class="agenda-table dynamic-text-align">
 
-                        <div
-                            class="header p-3 d-flex flex-sm-row flex-column justify-content-sm-between justify-content-center align-items-center">
-                            <p class="title mb-0">
-                                <a href="../assets/images/offers4.jpg">كل مميزات الشركات بشركة واحده فقط</a>
-                            </p>
-                            <p class="time mb-0">01/07/2021</p>
-                        </div>
+                        <table class="table agenda-table text-center">
 
-                        <div class="body">
-                            <a href="../assets/images/offers4.jpg">
-                                <img src="../assets/images/offers4.jpg" alt="offer">
-                            </a>
-                        </div>
+                            <thead class="bg-main text-white">
+                                <tr>
+                                    <th>اسم الشركة</th>
+                                    <th>التاريخ</th>
+                                    <th>العنوان</th>
+                                    <th>التوقيت</th>
+                                    <th>نوع الجمعية</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+
+                                <tr>
+                                    <td>
+                                        <a href="./company.html">
+                                            البنك المصري لتنمية الصادرات
+                                        </a>
+                                    </td>
+                                    <td class="table-date">07/07/2022</td>
+                                    <td class="text">
+                                        بفندق هلنان لاند مارك ( مصر للمقاصة سابقاً )– 86 شارع التسعين بالتجمع الخامس –
+                                        القاهرة الجديدة - القاهرة
+                                    </td>
+                                    <td class="table-time text-danger">03:00 PM</td>
+                                    <td class="text">عادية</td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <a href="./company.html">
+                                            الصناعات الهندسية المعمارية للانشاء والتعمير - ايكون
+                                        </a>
+                                    </td>
+                                    <td class="table-date">29/04/2021</td>
+                                    <td class="text">
+                                        بمقر الشركة بوادي حوف - حلوان
+                                    </td>
+                                    <td class="table-time text-danger">02:00 PM</td>
+                                    <td class="text">غير عادية</td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <a href="./company.html">
+                                            الحفر الوطنية
+                                        </a>
+                                    </td>
+                                    <td class="table-date">28/04/2021</td>
+                                    <td class="text">
+                                        17 ش نبيل الوقاد – الدقى - الجيزة
+                                    </td>
+                                    <td class="table-time text-danger">01:30 PM</td>
+                                    <td class="text">غير عادية</td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <a href="./company.html">
+                                            اجواء للصناعات الغذائية - مصر
+                                        </a>
+                                    </td>
+                                    <td class="table-date">28/04/2021</td>
+                                    <td class="text">
+                                        النادى الاجتماعى بمصنع الشركة الكيلو 3 عتاقة بجوار محطة الكهرباء - السويس
+                                    </td>
+                                    <td class="table-time text-danger">03:30 PM</td>
+                                    <td class="text">غير عادية</td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <a href="./company.html">
+                                            البنك المصري لتنمية الصادرات
+                                        </a>
+                                    </td>
+                                    <td class="table-date">07/07/2022</td>
+                                    <td class="text">
+                                        بفندق هلنان لاند مارك ( مصر للمقاصة سابقاً )– 86 شارع التسعين بالتجمع الخامس –
+                                        القاهرة الجديدة - القاهرة
+                                    </td>
+                                    <td class="table-time text-danger">03:00 PM</td>
+                                    <td class="text">عادية</td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <a href="./company.html">
+                                            الصناعات الهندسية المعمارية للانشاء والتعمير - ايكون
+                                        </a>
+                                    </td>
+                                    <td class="table-date">29/04/2021</td>
+                                    <td class="text">
+                                        بمقر الشركة بوادي حوف - حلوان
+                                    </td>
+                                    <td class="table-time text-danger">02:00 PM</td>
+                                    <td class="text">غير عادية</td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <a href="./company.html">
+                                            الحفر الوطنية
+                                        </a>
+                                    </td>
+                                    <td class="table-date">28/04/2021</td>
+                                    <td class="text">
+                                        17 ش نبيل الوقاد – الدقى - الجيزة
+                                    </td>
+                                    <td class="table-time text-danger">01:30 PM</td>
+                                    <td class="text">غير عادية</td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <a href="./company.html">
+                                            اجواء للصناعات الغذائية - مصر
+                                        </a>
+                                    </td>
+                                    <td class="table-date">28/04/2021</td>
+                                    <td class="text">
+                                        النادى الاجتماعى بمصنع الشركة الكيلو 3 عتاقة بجوار محطة الكهرباء - السويس
+                                    </td>
+                                    <td class="table-time text-danger">03:30 PM</td>
+                                    <td class="text">غير عادية</td>
+                                </tr>
+
+                            </tbody>
+
+                        </table>
 
                     </div>
 
                 </div>
 
-                <div class="col-md-6 col-sm-10 mb-3">
+                <div id="free-index-container" class="agenda-container px-3 py-4 mt-4 mb-5">
 
-                    <div class="offer-card">
+                    <div class="agenda-table dynamic-text-align">
 
-                        <div
-                            class="header p-3 d-flex flex-sm-row flex-column justify-content-sm-between justify-content-center align-items-center">
-                            <p class="title mb-0">
-                                <a href="../assets/images/offers5.jpg">كل مميزات الشركات بشركة واحده فقط</a>
-                            </p>
-                            <p class="time mb-0">01/07/2021</p>
-                        </div>
+                        <table class="table agenda-table text-center">
 
-                        <div class="body">
-                            <a href="../assets/images/offers5.jpg">
-                                <img src="../assets/images/offers5.jpg" alt="offer">
-                            </a>
-                        </div>
+                            <thead class="bg-main text-white">
+                                <tr>
+                                    <th>اسم الشركة</th>
+                                    <th>التوزيع</th>
+                                    <th>تاريخ الإستحقاق</th>
+                                    <th>تاريخ الدفع</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+
+                                <tr>
+                                    <td>
+                                        <a href="./company.html">
+                                            مستشفى النزهه الدولي
+                                        </a>
+                                    </td>
+                                    <td class="text">0.25 سهم مجاني لكل سهم اصلي من اسهم الشركة</td>
+                                    <td class="table-date text-danger">21/06/2020</td>
+                                    <td class="table-date">22/06/2020</td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <a href="./company.html">
+                                            المجموعة المتكاملة للأعمال الهندسية
+                                        </a>
+                                    </td>
+                                    <td class="text">0.111111 سهم مجاني لكل واحد سهم أصلي</td>
+                                    <td class="table-date text-danger">21/06/2020</td>
+                                    <td class="table-date">22/06/2020</td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <a href="./company.html">
+                                            المتحدة للاسكان والتعمير
+                                        </a>
+                                    </td>
+                                    <td class="text">1 سهم مجانى لكل 4 اسهم اصلية</td>
+                                    <td class="table-date text-danger">21/06/2020</td>
+                                    <td class="table-date">22/06/2020</td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <a href="./company.html">
+                                            الصعيد العامة للمقاولات والاستثمار العقاري SCCD
+                                        </a>
+                                    </td>
+                                    <td class="text">0.6 سهم لكل سهم اصلي</td>
+                                    <td class="table-date text-danger">21/06/2020</td>
+                                    <td class="table-date">22/06/2020</td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <a href="./company.html">
+                                            سبأ الدولية للأدوية والصناعات الكيماوية
+                                        </a>
+                                    </td>
+                                    <td class="text">0.1666666667 سهم مجانى لكل 1 سهم اصلى</td>
+                                    <td class="table-date text-danger">21/06/2020</td>
+                                    <td class="table-date">22/06/2020</td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <a href="./company.html">
+                                            الاسكندرية للخدمات الطبية - المركز الطبى الجديد - الاسكندرية
+                                        </a>
+                                    </td>
+                                    <td class="text">1 سهم مجانى لكل 9 اسهم اصلية</td>
+                                    <td class="table-date text-danger">21/06/2020</td>
+                                    <td class="table-date">22/06/2020</td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <a href="./company.html">
+                                            الكابلات الكهربائية المصرية
+                                        </a>
+                                    </td>
+                                    <td class="text">0.10 سهم مجاني لكل سهم أصلي</td>
+                                    <td class="table-date text-danger">21/06/2020</td>
+                                    <td class="table-date">22/06/2020</td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <a href="./company.html">
+                                            الكابلات الكهربائية المصرية
+                                        </a>
+                                    </td>
+                                    <td class="text">0.10 سهم مجاني لكل سهم أصلي</td>
+                                    <td class="table-date text-danger">21/06/2020</td>
+                                    <td class="table-date">22/06/2020</td>
+                                </tr>
+
+                            </tbody>
+
+                        </table>
 
                     </div>
 
@@ -780,7 +1055,7 @@
                             <a href="./offers.html">عروض ميراج</a>
                             <a href="./news.html"> الأخبار</a>
                             <a href="#">بيان الشركات</a>
-                            <a href="./economic-agenda.html">الأجندة الإقتصادية</a>
+                            <a href="#">الأجندة الإقتصادية</a>
 
                         </div>
 
@@ -890,9 +1165,10 @@
     <script src="../assets/fontawesome/js/font-kit.js"></script>
     <script src="../public/js/breaking-news.min.js"></script>
     <script src="../public/js/owl.carousel.min.js"></script>
+    <script src="../public/js/owl.custom.js"></script>
     <script src="../public/js/functions.js"></script>
     <script src="../public/js/layout.js"></script>
-    <script src="../public/js/news.js"></script>
+    <script src="../public/js/companies.js"></script>
 </body>
 
 </html>

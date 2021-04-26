@@ -10,6 +10,12 @@ $(document).ready(() => {
 
         handleCompanyDetailsTabClick($(this));
 
-    })
+    });
+
+    $(".agenda-tab").click(function () {
+
+        handleAgendaTabClick($(this));
+
+    });
 
 })
