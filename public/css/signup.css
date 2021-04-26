@@ -1,0 +1,48 @@
+body {
+    background-image: linear-gradient(to right bottom, #344dd8c7, rgba(243, 242, 241, 0.911)), url('../../assets/images/background2.jpg');
+    perspective: 1000px;
+    perspective-origin: 50% 50%;
+    animation: animateBackgroundImage 100s linear infinite;
+}
+
+/* Signup section styles */
+
+.signup-form .header h6 {
+    background-color: var(--mainOrange);
+    border: 1px solid #ffffff;
+    padding: 0.825rem 1rem;
+    text-align: center;
+    color: #ffffff;
+    font-weight: 600;
+    margin: auto;
+    font-size: 18px;
+    width: 100%;
+    border-radius: 50px;
+}
+
+.signup-form {
+    background-color: #000000;
+    box-shadow: 0 0 5px var(--blueColor);
+    border-radius: 6px;
+}
+
+.signup-form label {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.signup-form button {
+    display: block;
+    border: none;
+    outline: none !important;
+    background-color: #f8580e;
+    color: #ffffff;
+    padding: 0.625rem 3rem;
+    border-radius: 50px;
+    float: left;
+}
+
+.signup-form button:hover {
+    cursor: pointer;
+    background-color: #f74444;
+}

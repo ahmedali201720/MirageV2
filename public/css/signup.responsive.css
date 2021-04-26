@@ -1,0 +1,11 @@
+@media only screen and (max-width:576px) {
+    .signup-form label {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (min-width:576px) {
+    .signup-form label {
+        font-size: 16px;
+    }
+}
