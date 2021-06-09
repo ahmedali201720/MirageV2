@@ -57,8 +57,7 @@
                         <i class="fa fa-phone-alt mx-1"></i>
                     </div>
                     <div class="space-sm"></div>
-                    <div class="telephone-number cursor-pointer clipboard-btn d-lg-block d-none"
-                        data-clipboard-text="021117698650">
+                    <div class="telephone-number cursor-pointer clipboard-btn d-lg-block d-none" data-clipboard-text="021117698650">
                         <span>01117698650</span>
                         <span>(2+)</span>
                         <i class="fa fa-phone-alt mx-1"></i>
@@ -79,9 +78,11 @@
                 </div>
 
                 <div class="col-xl-4 col-md-5 d-flex justify-content-around px-2">
-                    <a class="header-button" href="#">فتح حساب تجريبى</a>
-                    <a class="header-button" href="./signup.html">فتح حساب جديد</a>
-                    <a class="header-button d-lg-block d-none" href="#">شاشة الأسعار</a>
+                    <a class="header-button" href="#">التداول الإلكترونى</a>
+                    <span class="px-1"></span>
+                    <a class="header-button" href="./signup.html">الشاشة اللحظية</a>
+                    <span class="px-1"></span>
+                    <a class="header-button d-lg-block d-none" href="#">محفظتك على موبايلك</a>
                 </div>
 
                 <div class="col-xl-2 col-lg-2 col-md-2 d-flex justify-content-center align-items-center">
@@ -300,58 +301,124 @@
 
     <section id="banner-section">
 
-        <div id="bannerCarousel" class="carousel slide" data-ride="carousel">
+        <div class="container-fluid">
 
-            <ol class="carousel-indicators">
-                <li data-target="#bannerCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#bannerCarousel" data-slide-to="1"></li>
-                <li data-target="#bannerCarousel" data-slide-to="2"></li>
-            </ol>
+            <div class="row">
 
-            <div class="carousel-inner">
-                <div class="carousel-item banner-item active">
-                    <img src="../assets/images/banner-back1.jpg" alt="background">
-                    <div class="carousel-caption carousel-banner-caption">
-                        <p class="title d-md-block d-none">
-                            ميراج لتداول الأوراق المالية
-                        </p>
-                        <p class="subtitle">
-                            ميراج نتشرف بإن نقدم لك أفضل خدمات التداول فى البورصة باقل تكلفة ممكنة
-                        </p>
+                <div class="col-8">
+
+                    <div id="bannerCarousel" class="carousel slide" data-ride="carousel">
+
+                        <ol class="carousel-indicators">
+                            <li data-target="#bannerCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#bannerCarousel" data-slide-to="1"></li>
+                            <li data-target="#bannerCarousel" data-slide-to="2"></li>
+                        </ol>
+
+                        <div class="carousel-inner">
+                            <div class="carousel-item banner-item active">
+                                <img src="../assets/images/banner-back1.jpg" alt="background">
+                                <div class="carousel-caption carousel-banner-caption">
+                                    <p class="title d-md-block d-none">
+                                        ميراج لتداول الأوراق المالية
+                                    </p>
+                                    <p class="subtitle">
+                                        ميراج نتشرف بإن نقدم لك أفضل خدمات التداول فى البورصة باقل تكلفة ممكنة
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="carousel-item banner-item">
+                                <img src="../assets/images/banner-back2.jpg" alt="background">
+                                <div class="carousel-caption carousel-banner-caption">
+                                    <p class="title d-md-block d-none">
+                                        ميراج لتداول الأوراق المالية
+                                    </p>
+                                    <p class="subtitle">
+                                        ميراج نتشرف بإن نقدم لك أفضل خدمات التداول فى البورصة باقل تكلفة ممكنة
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="carousel-item banner-item">
+                                <img src="../assets/images/banner-back3.jpg" alt="background">
+                                <div class="carousel-caption carousel-banner-caption">
+                                    <p class="title d-md-block d-none">
+                                        ميراج لتداول الأوراق المالية
+                                    </p>
+                                    <p class="subtitle">
+                                        نساعد الشركات علي التغلب علي المشاكل المالية بتقديم أفضل الحلول بدراسات متخصصة نتشرف بأن نقدم أفضل خدمات التداول في البورصة بأقل تكلفة ممكنة
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a class="carousel-control-prev" href="#bannerCarousel" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#bannerCarousel" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        </a>
+
                     </div>
+
                 </div>
-                <div class="carousel-item banner-item">
-                    <img src="../assets/images/banner-back2.jpg" alt="background">
-                    <div class="carousel-caption carousel-banner-caption">
-                        <p class="title d-md-block d-none">
-                            ميراج لتداول الأوراق المالية
-                        </p>
-                        <p class="subtitle">
-                            ميراج نتشرف بإن نقدم لك أفضل خدمات التداول فى البورصة باقل تكلفة ممكنة
-                        </p>
+
+                <div class="col-4">
+
+                    <div class="forex-screen p-5">
+
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">البورصة العربية</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">البورصة العالمية</button>
+                            </li>
+                        </ul>
+                        <div class="tab-content py-4" id="myTabContent">
+
+                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+
+                                <table class="table text-white">
+
+                                    <thead class="thead-dark">
+                                        <tr>
+                                            <th scope="col">اسم المؤشر</th>
+                                            <th scope="col">القيمة</th>
+                                            <th scope="col">التغير</th>
+                                        </tr>
+                                    </thead>
+
+                                    <tbody>
+                                        <tr>
+                                            <td>المؤشر العام</td>
+                                            <td></td>
+                                            <td>@mdo</td>
+                                        </tr>
+                                        <tr>
+                                            <td>مؤشر سوق دبى</td>
+                                            <td>Thornton</td>
+                                            <td>@fat</td>
+                                        </tr>
+                                        <tr>
+                                            <td>مؤشر سوق الكويت</td>
+                                            <td>the Bird</td>
+                                            <td>@twitter</td>
+                                        </tr>
+                                    </tbody>
+
+                                </table>
+
+                            </div>
+
+                            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+
+                        </div>
+
                     </div>
+
                 </div>
-                <div class="carousel-item banner-item">
-                    <img src="../assets/images/banner-back3.jpg" alt="background">
-                    <div class="carousel-caption carousel-banner-caption">
-                        <p class="title d-md-block d-none">
-                            ميراج لتداول الأوراق المالية
-                        </p>
-                        <p class="subtitle">
-                            نساعد الشركات علي التغلب علي المشاكل المالية بتقديم أفضل الحلول بدراسات متخصصة نتشرف بأن
-                            نقدم أفضل خدمات التداول في
-                            البورصة بأقل تكلفة ممكنة
-                        </p>
-                    </div>
-                </div>
+
             </div>
-
-            <a class="carousel-control-prev" href="#bannerCarousel" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            </a>
-            <a class="carousel-control-next" href="#bannerCarousel" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            </a>
 
         </div>
 
@@ -640,9 +707,7 @@
                 <div class="col-xl-4 col-lg-5 py-2">
 
                     <div class="news-video-container">
-                        <iframe src="https://www.youtube.com/embed/fOukA4Qh9QA" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
+                        <iframe src="https://www.youtube.com/embed/fOukA4Qh9QA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
 
                 </div>
@@ -750,7 +815,7 @@
                                 <i class="fas fa-chevron-down mx-1 text-danger"></i>
                                 -0.024
                             </span>
-                            <span class="item-value mx-1">3.060</span>
+                        <span class="item-value mx-1">3.060</span>
                         </span>
                     </li>
                     <li class="forex-item">
@@ -762,7 +827,7 @@
                                 <i class="fas fa-chevron-up mx-1 text-success"></i>
                                 +0.024
                             </span>
-                            <span class="item-value mx-1">3.060</span>
+                        <span class="item-value mx-1">3.060</span>
                         </span>
                     </li>
                     <li class="forex-item">
@@ -774,7 +839,7 @@
                                 <i class="fas fa-chevron-down mx-1 text-danger"></i>
                                 -0.024
                             </span>
-                            <span class="item-value mx-1">3.060</span>
+                        <span class="item-value mx-1">3.060</span>
                         </span>
                     </li>
                     <li class="forex-item">
@@ -786,7 +851,7 @@
                                 <i class="fas fa-chevron-up mx-1 text-success"></i>
                                 +0.024
                             </span>
-                            <span class="item-value mx-1">3.060</span>
+                        <span class="item-value mx-1">3.060</span>
                         </span>
                     </li>
                     <li class="forex-item">
@@ -798,7 +863,7 @@
                                 <i class="fas fa-chevron-down mx-1 text-danger"></i>
                                 -0.024
                             </span>
-                            <span class="item-value mx-1">3.060</span>
+                        <span class="item-value mx-1">3.060</span>
                         </span>
                     </li>
                     <li class="forex-item">
@@ -810,7 +875,7 @@
                                 <i class="fas fa-chevron-up mx-1 text-success"></i>
                                 +0.024
                             </span>
-                            <span class="item-value mx-1">3.060</span>
+                        <span class="item-value mx-1">3.060</span>
                         </span>
                     </li>
                     <li class="forex-item">
@@ -822,7 +887,7 @@
                                 <i class="fas fa-chevron-down mx-1 text-danger"></i>
                                 -0.024
                             </span>
-                            <span class="item-value mx-1">3.060</span>
+                        <span class="item-value mx-1">3.060</span>
                         </span>
                     </li>
                     <li class="forex-item">
@@ -834,7 +899,7 @@
                                 <i class="fas fa-chevron-up mx-1 text-success"></i>
                                 +0.024
                             </span>
-                            <span class="item-value mx-1">3.060</span>
+                        <span class="item-value mx-1">3.060</span>
                         </span>
                     </li>
                     <li class="forex-item">
@@ -846,7 +911,7 @@
                                 <i class="fas fa-chevron-down mx-1 text-danger"></i>
                                 -0.024
                             </span>
-                            <span class="item-value mx-1">3.060</span>
+                        <span class="item-value mx-1">3.060</span>
                         </span>
                     </li>
                     <li class="forex-item">
@@ -858,7 +923,7 @@
                                 <i class="fas fa-chevron-up mx-1 text-success"></i>
                                 +0.024
                             </span>
-                            <span class="item-value mx-1">3.060</span>
+                        <span class="item-value mx-1">3.060</span>
                         </span>
                     </li>
                     <li class="forex-item">
@@ -870,7 +935,7 @@
                                 <i class="fas fa-chevron-down mx-1 text-danger"></i>
                                 -0.024
                             </span>
-                            <span class="item-value mx-1">3.060</span>
+                        <span class="item-value mx-1">3.060</span>
                         </span>
                     </li>
                     <li class="forex-item">
@@ -882,7 +947,7 @@
                                 <i class="fas fa-chevron-up mx-1 text-success"></i>
                                 +0.024
                             </span>
-                            <span class="item-value mx-1">3.060</span>
+                        <span class="item-value mx-1">3.060</span>
                         </span>
                     </li>
                     <li class="forex-item">
@@ -894,7 +959,7 @@
                                 <i class="fas fa-chevron-down mx-1 text-danger"></i>
                                 -0.024
                             </span>
-                            <span class="item-value mx-1">3.060</span>
+                        <span class="item-value mx-1">3.060</span>
                         </span>
                     </li>
                     <li class="forex-item">
@@ -906,7 +971,7 @@
                                 <i class="fas fa-chevron-up mx-1 text-success"></i>
                                 +0.024
                             </span>
-                            <span class="item-value mx-1">3.060</span>
+                        <span class="item-value mx-1">3.060</span>
                         </span>
                     </li>
                     <li class="forex-item">
@@ -918,7 +983,7 @@
                                 <i class="fas fa-chevron-down mx-1 text-danger"></i>
                                 -0.024
                             </span>
-                            <span class="item-value mx-1">3.060</span>
+                        <span class="item-value mx-1">3.060</span>
                         </span>
                     </li>
                     <li class="forex-item">
@@ -930,7 +995,7 @@
                                 <i class="fas fa-chevron-up mx-1 text-success"></i>
                                 +0.024
                             </span>
-                            <span class="item-value mx-1">3.060</span>
+                        <span class="item-value mx-1">3.060</span>
                         </span>
                     </li>
                     <li class="forex-item">
@@ -942,7 +1007,7 @@
                                 <i class="fas fa-chevron-down mx-1 text-danger"></i>
                                 -0.024
                             </span>
-                            <span class="item-value mx-1">3.060</span>
+                        <span class="item-value mx-1">3.060</span>
                         </span>
                     </li>
                     <li class="forex-item">
@@ -954,7 +1019,7 @@
                                 <i class="fas fa-chevron-up mx-1 text-success"></i>
                                 +0.024
                             </span>
-                            <span class="item-value mx-1">3.060</span>
+                        <span class="item-value mx-1">3.060</span>
                         </span>
                     </li>
                     <li class="forex-item">
@@ -966,7 +1031,7 @@
                                 <i class="fas fa-chevron-down mx-1 text-danger"></i>
                                 -0.024
                             </span>
-                            <span class="item-value mx-1">3.060</span>
+                        <span class="item-value mx-1">3.060</span>
                         </span>
                     </li>
                     <li class="forex-item">
@@ -978,7 +1043,7 @@
                                 <i class="fas fa-chevron-up mx-1 text-success"></i>
                                 +0.024
                             </span>
-                            <span class="item-value mx-1">3.060</span>
+                        <span class="item-value mx-1">3.060</span>
                         </span>
                     </li>
                 </ul>
@@ -1057,8 +1122,7 @@
 
                             <div id="egx30ChartContainer" class="egx-chart">
                                 <div id="egx30Chart"></div>
-                                <div
-                                    class="egx-data-gist d-flex justify-content-center align-items-center my-xl-5 my-3 font-weight-bold">
+                                <div class="egx-data-gist d-flex justify-content-center align-items-center my-xl-5 my-3 font-weight-bold">
                                     <p class="mx-xl-4 mx-2 mb-0">
                                         <span class="text-main">القيمة : </span>
                                         <span class="text-info">3424.01</span>
@@ -1076,8 +1140,7 @@
                             </div>
                             <div id="egx30CapChartContainer" class="egx-chart">
                                 <div id="egx30CapChart"></div>
-                                <div
-                                    class="egx-data-gist d-flex justify-content-center align-items-center my-xl-5 my-3 font-weight-bold">
+                                <div class="egx-data-gist d-flex justify-content-center align-items-center my-xl-5 my-3 font-weight-bold">
                                     <p class="mx-xl-4 mx-2 mb-0">
                                         <span class="text-main">القيمة : </span>
                                         <span class="text-info">4825.01</span>
@@ -1095,8 +1158,7 @@
                             </div>
                             <div id="egx30TrChartContainer" class="egx-chart">
                                 <div id="egx30TrChart"></div>
-                                <div
-                                    class="egx-data-gist d-flex justify-content-center align-items-center my-xl-5 my-3 font-weight-bold">
+                                <div class="egx-data-gist d-flex justify-content-center align-items-center my-xl-5 my-3 font-weight-bold">
                                     <p class="mx-xl-4 mx-2 mb-0">
                                         <span class="text-main">القيمة : </span>
                                         <span class="text-info">3424.01</span>
@@ -1114,8 +1176,7 @@
                             </div>
                             <div id="egx50ChartContainer" class="egx-chart">
                                 <div id="egx50Chart"></div>
-                                <div
-                                    class="egx-data-gist d-flex justify-content-center align-items-center my-xl-5 my-3 font-weight-bold">
+                                <div class="egx-data-gist d-flex justify-content-center align-items-center my-xl-5 my-3 font-weight-bold">
                                     <p class="mx-xl-4 mx-2 mb-0">
                                         <span class="text-main">القيمة : </span>
                                         <span class="text-info">3424.01</span>
@@ -1133,8 +1194,7 @@
                             </div>
                             <div id="egx70ChartContainer" class="egx-chart">
                                 <div id="egx70Chart"></div>
-                                <div
-                                    class="egx-data-gist d-flex justify-content-center align-items-center my-xl-5 my-3 font-weight-bold">
+                                <div class="egx-data-gist d-flex justify-content-center align-items-center my-xl-5 my-3 font-weight-bold">
                                     <p class="mx-xl-4 mx-2 mb-0">
                                         <span class="text-main">القيمة : </span>
                                         <span class="text-info">3424.01</span>
@@ -1152,8 +1212,7 @@
                             </div>
                             <div id="egx100ChartContainer" class="egx-chart">
                                 <div id="egx100Chart"></div>
-                                <div
-                                    class="egx-data-gist d-flex justify-content-center align-items-center my-xl-5 my-3 font-weight-bold">
+                                <div class="egx-data-gist d-flex justify-content-center align-items-center my-xl-5 my-3 font-weight-bold">
                                     <p class="mx-xl-4 mx-2 mb-0">
                                         <span class="text-main">القيمة : </span>
                                         <span class="text-info">3424.01</span>
@@ -1544,8 +1603,7 @@
     <footer id="footer">
 
         <div class="footer-header-wave">
-            <svg class="footer-wave-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 100"
-                preserveAspectRatio="none">
+            <svg class="footer-wave-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 100" preserveAspectRatio="none">
                 <path class="footer-wave-path"
                     d="M851.8,100c125,0,288.3-45,348.2-64V0H0v44c3.7-1,7.3-1.9,11-2.9C80.7,22,151.7,10.8,223.5,6.3C276.7,2.9,330,4,383,9.8 c52.2,5.7,103.3,16.2,153.4,32.8C623.9,71.3,726.8,100,851.8,100z">
                 </path>
@@ -1617,8 +1675,7 @@
                         <div class="footer-section-label">موقعنا</div>
 
                         <div class="footer-map-container">
-                            <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d884777.025488804!2d31.897286790677917!3d29.974824107523062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1458413738eb1683%3A0xa9ff551313523075!2z2KzYstix2Kkg2YXYp9ix2YPYqg!5e0!3m2!1sar!2seg!4v1614438816489!5m2!1sar!2seg"
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d884777.025488804!2d31.897286790677917!3d29.974824107523062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1458413738eb1683%3A0xa9ff551313523075!2z2KzYstix2Kkg2YXYp9ix2YPYqg!5e0!3m2!1sar!2seg!4v1614438816489!5m2!1sar!2seg"
                                 style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                         </div>
 
@@ -1628,8 +1685,7 @@
 
                 <div class="row">
 
-                    <div
-                        class="col-xl-4 footer-logo-container d-flex justify-content-center align-items-center text-center">
+                    <div class="col-xl-4 footer-logo-container d-flex justify-content-center align-items-center text-center">
                         <div class="link-wrapper">
                             <a href="#" class="footer-social-link">
                                 <i class="fab fa-facebook-messenger"></i>
@@ -1655,8 +1711,7 @@
                         </div>
                     </div>
 
-                    <div
-                        class="col-xl-4 footer-logo-container d-flex justify-content-center align-items-center text-center">
+                    <div class="col-xl-4 footer-logo-container d-flex justify-content-center align-items-center text-center">
                         <a href="./index.html">
                             <img src="../assets/images/mirage-logo.png" alt="logo">
                         </a>

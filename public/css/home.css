@@ -1,5 +1,10 @@
 /* banner section styles */
 
+#banner-section {
+    background-image: url('../../assets/images/banner-back1.jpg');
+    background-size: cover;
+}
+
 .banner-item img {
     width: 100%;
     height: auto;
@@ -30,7 +35,9 @@
     background-image: url('../../assets/images/prev.png');
 }
 
+
 /* End banner section styles */
+
 
 /* Statistics section */
 
@@ -60,7 +67,8 @@
     border-top: none;
 }
 
-.squareInnerContainer:before, .squareInnerContainer:after {
+.squareInnerContainer:before,
+.squareInnerContainer:after {
     content: '';
     position: absolute;
     top: 0px;
@@ -119,7 +127,9 @@
     transition: all 1.5s;
 }
 
+
 /* ***************************************************************************************************** */
+
 
 /* feedback styles */
 
@@ -254,6 +264,7 @@
 ::-webkit-scrollbar-thumb:hover {
     background: var(--blueColor);
 }
+
 
 /* *********************************************************************************************** */
 
@@ -419,6 +430,7 @@
     border-radius: 10px;
 }
 
+
 /* ************************************************************************************************************** */
 
 .investment-categories {
@@ -427,7 +439,8 @@
     height: 100%;
 }
 
-.investment-categories .header, .company-activity .header {
+.investment-categories .header,
+.company-activity .header {
     border-radius: 8px;
     color: rgb(48, 182, 182);
     font-weight: 700;
@@ -439,6 +452,7 @@
     box-shadow: 0 0 5px rgb(197, 189, 189);
     border-radius: 8px;
 }
+
 
 /***************************************************** ************************************************/
 
@@ -502,9 +516,12 @@
     font-weight: 600;
 }
 
-#qtyTable, #profitTable, #loseTable {
+#qtyTable,
+#profitTable,
+#loseTable {
     display: none;
 }
+
 
 /* ********************************************************************************************************** */
 
@@ -522,19 +539,22 @@
     fill: orangered !important;
 }
 
+
 /* **************************************************************************************************************** */
 
 .market-state {
     overflow-x: auto;
 }
 
-.market-state, .egx-data {
+.market-state,
+.egx-data {
     height: 100%;
     box-shadow: 0 0 5px rgb(197, 189, 189);
     border-radius: 8px;
 }
 
-.market-state .header, .egx-data .header {
+.market-state .header,
+.egx-data .header {
     border-radius: 8px;
     color: rgb(48, 182, 182);
     font-weight: 700;
@@ -580,7 +600,11 @@
     color: white;
 }
 
-#egx30CapChartContainer, #egx30TrChartContainer, #egx50ChartContainer, #egx70ChartContainer, #egx100ChartContainer {
+#egx30CapChartContainer,
+#egx30TrChartContainer,
+#egx50ChartContainer,
+#egx70ChartContainer,
+#egx100ChartContainer {
     display: none;
 }
 
@@ -597,5 +621,5 @@
     direction: ltr !important;
 }
 
-/* ********************************************************************************************** */
 
+/* ********************************************************************************************** */
