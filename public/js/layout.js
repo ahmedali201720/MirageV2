@@ -2,7 +2,7 @@ $(document).ready(() => {
 
     var fixedDateContainerOpened = false;
 
-    setTimeout(function () {
+    setTimeout(function() {
         $("#loading-overlay").fadeOut(600);
     }, 5000);
 
@@ -12,19 +12,19 @@ $(document).ready(() => {
 
     // *******************************************************************************************************
 
-    $("#go-up").click(function (e) {
+    $("#go-up").click(function(e) {
         e.preventDefault();
         $("html, body").animate({ scrollTop: 0 }, 1000);
     })
 
     // *******************************************************************************************************
 
-    setInterval(function () {
+    setInterval(function() {
         $("#date-time-content .time").text(getTime());
         $("#date-time-content .date").text(getDate());
     }, 1000);
 
-    $("#date-container-toggler").click(function () {
+    $("#date-container-toggler").click(function() {
         if (fixedDateContainerOpened) {
             const parent = $(this).parent();
             hideFixedDateTime(parent);
@@ -32,7 +32,7 @@ $(document).ready(() => {
         }
     });
 
-    $("#date-container-opener").click(function () {
+    $("#date-container-opener").click(function() {
         if (!fixedDateContainerOpened) {
             const parent = $(this).parent();
             showFixedDateTime(parent);
@@ -44,10 +44,10 @@ $(document).ready(() => {
 
     const sidebarToggler = $("#sidebar-toggler");
     const sidebarCloseBtn = $("#sidebar-close-btn");
-    sidebarToggler.click(function () {
+    sidebarToggler.click(function() {
         openSidebar($("#sidebar"));
     });
-    sidebarCloseBtn.click(function () {
+    sidebarCloseBtn.click(function() {
         closeSidebar($("#sidebar"));
     });
 
@@ -65,17 +65,18 @@ $('#forexTicker').breakingNews({
     direction: getPageDirection(),
     scrollSpeed: 3,
     borderWidth: 0,
+    position: 'fixed-bottom'
 });
 
 //*******************************************************************************************************
 
-$(".activity-tab").click(function () {
+$(".activity-tab").click(function() {
     handleActivityTabClick($(this));
 })
 
 // *****************************************************************************************************
 
-$(".egx-tab").click(function () {
+$(".egx-tab").click(function() {
     handleEgxTabClick($(this));
 })
 
@@ -85,11 +86,11 @@ $(".tickers-container").css({
     top: $("#main-header").outerHeight() + 2
 });
 
-$(".copy-btn").click(function () {
+$(".copy-btn").click(function() {
 
     const correspondingAlert = $(".success-alert", this);
     correspondingAlert.fadeIn(200);
-    setTimeout(function () {
+    setTimeout(function() {
         correspondingAlert.fadeOut(200);
     }, 1000);
 
