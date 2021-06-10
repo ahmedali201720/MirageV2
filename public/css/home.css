@@ -35,24 +35,33 @@
     background-image: url('../../assets/images/prev.png');
 }
 
-.forex-screen {
+.forex-screen,
+.gold-currency-screen {
     background-color: #00000085;
-    min-height: 100%;
-    max-height: 100%;
-    overflow: auto;
 }
 
-.forex-screen .nav-tabs {
+.forex-screen .title,
+.gold-currency-screen .title {
+    background-color: #034168af;
+    padding: 1.2rem 0.325rem;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.forex-screen .nav-tabs,
+.gold-currency-screen .nav-tabs {
     border-bottom: none !important;
     background-color: #000000ad;
 }
 
-.forex-screen .nav-tabs .nav-item {
+.forex-screen .nav-tabs .nav-item,
+.gold-currency-screen .nav-tabs .nav-item {
     width: 50%;
     text-align: center;
 }
 
-.forex-screen .nav-tabs .nav-item .nav-link {
+.forex-screen .nav-tabs .nav-item .nav-link,
+.gold-currency-screen .nav-tabs .nav-item .nav-link {
     background-color: transparent;
     color: #ffffff;
     border: none;
@@ -60,14 +69,17 @@
     font-weight: 600;
     transition: all 0.6s;
     padding: 1rem 0;
+    border-radius: 0;
 }
 
-.forex-screen .nav-tabs .nav-item .nav-link.active {
+.forex-screen .nav-tabs .nav-item .nav-link.active,
+.gold-currency-screen .nav-tabs .nav-item .nav-link.active {
     background-color: #ffffffd5;
     color: var(--blueColor);
 }
 
-#arabInterTabsContent table {
+#arabInterTabsContent table,
+#goldCurrTabsContent table {
     font-size: 0.825rem;
 }
 
@@ -295,22 +307,6 @@
     animation: animateBackgroundImage 100s linear infinite;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-}
-
-::-webkit-scrollbar {
-    width: 5px;
-}
-
-::-webkit-scrollbar-track {
-    border: 1px solid grey;
-}
-
-::-webkit-scrollbar-thumb {
-    background: var(--blueColor);
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: var(--blueColor);
 }
 
 
