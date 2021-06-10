@@ -63,6 +63,7 @@
 
 .forex-screen .nav-tabs .nav-item .nav-link,
 .gold-currency-screen .nav-tabs .nav-item .nav-link {
+    height: 100%;
     background-color: transparent;
     color: #ffffff;
     border: none;
@@ -114,6 +115,7 @@
 
 .activity-screen {
     background-color: #000000a2;
+    border: 1px solid #efefef;
 }
 
 .activity-screen .nav-tabs {
@@ -127,6 +129,7 @@
 }
 
 .activity-screen .nav-tabs .nav-item .nav-link {
+    height: 100%;
     background-color: transparent;
     color: #ffffff;
     border: none;
