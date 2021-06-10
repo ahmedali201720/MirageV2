@@ -42,7 +42,8 @@
 
 .forex-screen .title,
 .gold-currency-screen .title,
-.activity-screen .title {
+.activity-screen .title,
+.late-price-screen .title {
     background-color: #034168af;
     padding: 1.2rem 0.325rem;
     color: #ffffff;
@@ -113,12 +114,14 @@
     flex: 1 1 auto;
 }
 
-.activity-screen {
+.activity-screen,
+.late-price-screen {
     background-color: #000000a2;
     border: 1px solid #efefef;
 }
 
-.activity-screen .nav-tabs {
+.activity-screen .nav-tabs,
+.late-price-screen .nav-tabs {
     border-bottom: none !important;
     background-color: #000000ad;
 }
@@ -143,6 +146,13 @@
 .activity-screen .nav-tabs .nav-item .nav-link.active {
     background-color: #ffffffd5;
     color: var(--blueColor);
+}
+
+.late-price-screen {
+    border-left: none;
+    border-right: none;
+    max-height: 500px;
+    overflow: auto;
 }
 
 
