@@ -41,7 +41,8 @@
 }
 
 .forex-screen .title,
-.gold-currency-screen .title {
+.gold-currency-screen .title,
+.activity-screen .title {
     background-color: #034168af;
     padding: 1.2rem 0.325rem;
     color: #ffffff;
@@ -101,11 +102,13 @@
     height: 100%;
 }
 
-.forex-screen {
+.forex-screen,
+#bannerCarousel {
     flex: 0 1 auto;
 }
 
-.gold-currency-screen {
+.gold-currency-screen,
+.activity-screen {
     flex: 1 1 auto;
 }
 
