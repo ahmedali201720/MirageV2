@@ -95,6 +95,50 @@
     font-size: 0.725rem;
 }
 
+.screens-wrapper {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+}
+
+.forex-screen {
+    flex: 0 1 auto;
+}
+
+.gold-currency-screen {
+    flex: 1 1 auto;
+}
+
+.activity-screen {
+    background-color: #000000a2;
+}
+
+.activity-screen .nav-tabs {
+    border-bottom: none !important;
+    background-color: #000000ad;
+}
+
+.activity-screen .nav-tabs .nav-item {
+    width: 25%;
+    text-align: center;
+}
+
+.activity-screen .nav-tabs .nav-item .nav-link {
+    background-color: transparent;
+    color: #ffffff;
+    border: none;
+    font-size: 0.825rem;
+    font-weight: 600;
+    transition: all 0.6s;
+    padding: 1rem 0;
+    border-radius: 0;
+}
+
+.activity-screen .nav-tabs .nav-item .nav-link.active {
+    background-color: #ffffffd5;
+    color: var(--blueColor);
+}
+
 
 /* End banner section styles */
 
