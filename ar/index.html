@@ -305,7 +305,7 @@
 
             <div class="row">
 
-                <div class="col-8">
+                <div class="col-lg-8 col-md-7 mb-3">
 
                     <div id="bannerCarousel" class="carousel slide" data-ride="carousel">
 
@@ -362,25 +362,25 @@
 
                 </div>
 
-                <div class="col-4">
+                <div class="col-lg-4 col-md-5">
 
-                    <div class="forex-screen p-5">
+                    <div class="forex-screen">
 
-                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <ul class="nav nav-tabs px-0" id="arabInterForexTab" role="tablist">
                             <li class="nav-item" role="presentation">
-                                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">البورصة العربية</button>
+                                <a class="nav-link active" id="arabForexTab" data-toggle="tab" href="#arabForexTabContent" type="button" role="tab" aria-controls="arabForexTabContent" aria-selected="true">البورصة العربية</a>
                             </li>
                             <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">البورصة العالمية</button>
+                                <a class="nav-link" id="interForexTab" data-toggle="tab" href="#interForexTabContent" type="button" role="tab" aria-controls="arabForexTabContent" aria-selected="false">البورصة العالمية</a>
                             </li>
                         </ul>
-                        <div class="tab-content py-4" id="myTabContent">
+                        <div class="tab-content" id="arabInterTabsContent">
 
-                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                            <div class="tab-pane fade show active" id="arabForexTabContent" role="tabpanel" aria-labelledby="arabForexTab">
 
-                                <table class="table text-white">
+                                <table class="table arab-inter-forex-table text-white">
 
-                                    <thead class="thead-dark">
+                                    <thead class="bg-transparent">
                                         <tr>
                                             <th scope="col">اسم المؤشر</th>
                                             <th scope="col">القيمة</th>
@@ -390,19 +390,49 @@
 
                                     <tbody>
                                         <tr>
-                                            <td>المؤشر العام</td>
-                                            <td></td>
-                                            <td>@mdo</td>
+                                            <td class="name">المؤشر العام</td>
+                                            <td class="value">8,257.86</td>
+                                            <td class="change">
+                                                <span class="num">0.13</span>
+                                                <i class="dir dir-down d-none fa fa-arrow-alt-down mx-1"></i>
+                                                <i class="dir dir-up fa fa-arrow-alt-up mx-1"></i>
+                                            </td>
                                         </tr>
                                         <tr>
-                                            <td>مؤشر سوق دبى</td>
-                                            <td>Thornton</td>
-                                            <td>@fat</td>
+                                            <td class="name">مؤشر سوق دبى</td>
+                                            <td class="value">2,729.04</td>
+                                            <td class="change">
+                                                <span class="num">0.18</span>
+                                                <i class="dir dir-down fa fa-arrow-alt-down mx-1"></i>
+                                                <i class="dir dir-up d-none fa fa-arrow-alt-up mx-1"></i>
+                                            </td>
                                         </tr>
                                         <tr>
-                                            <td>مؤشر سوق الكويت</td>
-                                            <td>the Bird</td>
-                                            <td>@twitter</td>
+                                            <td class="name">مؤشر سوق الكويت</td>
+                                            <td class="value">4,783.71</td>
+                                            <td class="change">
+                                                <span class="num">0.27</span>
+                                                <i class="dir dir-down d-none fa fa-arrow-alt-down mx-1"></i>
+                                                <i class="dir dir-up fa fa-arrow-alt-up mx-1"></i>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="name">مؤشر سوق دبى</td>
+                                            <td class="value">4,997.22</td>
+                                            <td class="change">
+                                                <span class="num">0.38</span>
+                                                <i class="dir dir-down fa fa-arrow-alt-down mx-1"></i>
+                                                <i class="dir dir-up d-none fa fa-arrow-alt-up mx-1"></i>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="name">مؤشر سوق عمان</td>
+                                            <td class="value">1,823.43</td>
+                                            <td class="change">
+                                                <span class="num">0.22</span>
+                                                <i class="dir dir-down d-none fa fa-arrow-alt-down mx-1"></i>
+                                                <i class="dir dir-up fa fa-arrow-alt-up mx-1"></i>
+                                            </td>
                                         </tr>
                                     </tbody>
 
@@ -410,7 +440,60 @@
 
                             </div>
 
-                            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+                            <div class="tab-pane fade" id="interForexTabContent" role="tabpanel" aria-labelledby="arabForexTab">
+
+                                <table class="table arab-inter-forex-table text-white">
+
+                                    <thead class="bg-transparent">
+                                        <tr>
+                                            <th scope="col">اسم المؤشر</th>
+                                            <th scope="col">القيمة</th>
+                                            <th scope="col">التغير</th>
+                                        </tr>
+                                    </thead>
+
+                                    <tbody>
+                                        <tr>
+                                            <td class="name">داو جونز</td>
+                                            <td class="value">8,257.86</td>
+                                            <td class="change">
+                                                <span class="num">0.13</span>
+                                                <i class="dir dir-down d-none fa fa-arrow-alt-down mx-1"></i>
+                                                <i class="dir dir-up fa fa-arrow-alt-up mx-1"></i>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="name">داكس</td>
+                                            <td class="value">2,729.04</td>
+                                            <td class="change">
+                                                <span class="num">0.18</span>
+                                                <i class="dir dir-down fa fa-arrow-alt-down mx-1"></i>
+                                                <i class="dir dir-up d-none fa fa-arrow-alt-up mx-1"></i>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="name">نيكاى 225</td>
+                                            <td class="value">4,783.71</td>
+                                            <td class="change">
+                                                <span class="num">0.27</span>
+                                                <i class="dir dir-down d-none fa fa-arrow-alt-down mx-1"></i>
+                                                <i class="dir dir-up fa fa-arrow-alt-up mx-1"></i>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="name">فوتسى 100</td>
+                                            <td class="value">4,997.22</td>
+                                            <td class="change">
+                                                <span class="num">0.38</span>
+                                                <i class="dir dir-down fa fa-arrow-alt-down mx-1"></i>
+                                                <i class="dir dir-up d-none fa fa-arrow-alt-up mx-1"></i>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+
+                                </table>
+
+                            </div>
 
                         </div>
 
