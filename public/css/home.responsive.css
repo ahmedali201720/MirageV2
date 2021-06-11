@@ -2,6 +2,14 @@
     .banner-item img {
         height: 200px !important;
     }
+    /* news section scripts */
+    #news-section .news-container {
+        grid-template-columns: auto;
+    }
+    #news-section .news-container .item.main-item {
+        grid-column: 1 / span 1;
+        grid-row: 1/ span 1;
+    }
 }
 
 @media only screen and (max-width: 414px) {
