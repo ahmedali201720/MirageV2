@@ -6,7 +6,6 @@
     --blueColor: #034168;
 }
 
-
 /* Set the direction right to left */
 
 * {
@@ -90,9 +89,12 @@ body {
     color: #ffffff;
 }
 
+.bg-light-dark {
+    background-color: #000000ab !important;
+    color: #ffffff;
+}
 
 /* ************************************************************************************************************** */
-
 
 /* Forex Ticker Styles */
 
@@ -112,8 +114,7 @@ body {
     border-bottom: 2px solid rgb(252, 160, 124);
 }
 
-.forex-item,
-.news-ticker-item {
+.forex-item, .news-ticker-item {
     padding: 0 1rem;
 }
 
@@ -143,7 +144,6 @@ body {
 .news-ticker-item a:hover .item-header {
     color: rgb(231, 207, 207) !important;
 }
-
 
 /* ********************************************************************************** */
 

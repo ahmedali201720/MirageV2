@@ -154,13 +154,13 @@
     background-attachment: fixed;
 }
 
-#stats .stats-header{
+#stats .stats-header {
     background-color: var(--blueColor);
     color: #ffffff;
     width: 250px;
     margin: auto;
     border-radius: 50px;
-    padding: 1rem ;
+    padding: 1rem;
 }
 
 .squareItem {
@@ -338,7 +338,7 @@
     text-align: center;
     color: #ffffff;
     border-radius: 0;
-    padding : 0.925rem 0;
+    padding: 0.925rem 0;
 }
 
 #companyActivityTabs .nav-item .nav-link.active {
@@ -346,7 +346,7 @@
     font-weight: 600;
 }
 
-table{
+table {
     color: #ffffff;
     font-size: 14px;
     text-align: center;
@@ -391,9 +391,14 @@ table{
     direction: rtl !important;
 }
 
-.market-state-table td {
+.market-state-table .head {
     font-size: 14px !important;
     font-weight: 700 !important;
+}
+
+.market-state-table td {
+    font-size: 12px !important;
+    font-weight: 600 !important;
     vertical-align: middle;
 }
 
