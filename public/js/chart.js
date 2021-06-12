@@ -15,7 +15,7 @@ $(document).ready(() => {
             plotBorderWidth: null,
             plotShadow: false,
             type: 'pie',
-            height: 250,
+            height: 200,
         },
         title: {
             text: 'أفراد / مستثمرين'
@@ -66,7 +66,7 @@ $(document).ready(() => {
             plotBorderWidth: null,
             plotShadow: false,
             type: 'pie',
-            height: 250,
+            height: 200,
         },
         title: {
             text: 'مصريين / عرب / أجانب'

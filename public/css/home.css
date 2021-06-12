@@ -295,20 +295,21 @@
     text-align: left;
 }
 
-/* ************************************************************************************************************** */
-
-.investment-categories {
-    box-shadow: 0 0 5px rgb(197, 189, 189);
-    border-radius: 8px;
-    height: 100%;
-}
-
 .investment-categories .header, .company-activity .header {
-    border-radius: 8px;
-    color: rgb(48, 182, 182);
-    font-weight: 700;
-    font-size: 20px;
+    background-color : #034168;
+    text-align: center;
+    color: #ffffff;
+    padding: 1rem .925rem
 }
+
+.investment-categories .wrapper{
+    display: flex;
+    justify-content : center;
+    width: 100%;
+    overflow : hidden;
+}
+
+/* ************************************************************************************************************** */
 
 .company-activity {
     height: 100%;
@@ -395,7 +396,7 @@
 .highcharts-title {
     font-size: 14px !important;
     font-weight: 700;
-    fill: orangered !important;
+    fill: #000000 !important;
 }
 
 /* **************************************************************************************************************** */
