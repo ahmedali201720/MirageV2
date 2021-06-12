@@ -311,10 +311,8 @@
 
 /* ************************************************************************************************************** */
 
-.company-activity {
-    height: 100%;
-    box-shadow: 0 0 5px rgb(197, 189, 189);
-    border-radius: 8px;
+.egx-investment{
+    background-image : linear-gradient(to bottom right , #f3610c8f , #10193373) , url(../../assets/images/banner-back2.jpg)
 }
 
 /***************************************************** ************************************************/
